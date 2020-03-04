@@ -1,0 +1,23 @@
+<h1 style="text-align: center;">Registration</h1>
+<form action="/home/registration" method="POST"> 
+    <label for="">Name:</label> 
+    <input type="text" name="info[name]" id="" required><br><br>
+    <label for="">D.O.B:</label>
+    <input type="date" name="info[date]" id="" required><br><br>
+    <label for="">Email:</label>
+    <input type="email" name="info[email]" id="" required><br><br>
+    <label for="">Phone no:</label>
+    <input type="number" name="info[phone]" id="" required><br><br>
+    <label for="">Education qualification:</label>
+    <input type="text" name="info[education]" id="" required><br><br>
+    <label for="">Post opting for:</label>
+    <select name="info[post]" id="">
+{       <option value="">Select</option>
+        <option value="post1">post1</option>
+        <option value="post2"> post2</option>
+        <option value="post3">post3</option>
+        <option value="post4">post4</option>
+    </select><br><br>
+    <input type="text" name="info[_id]" id="" required hidden value="2">
+    <button>PROCEED</button>
+</form>
