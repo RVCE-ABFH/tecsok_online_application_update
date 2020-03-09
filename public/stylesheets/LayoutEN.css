@@ -1,0 +1,45 @@
+﻿@font-face {
+    font-family: 'yanone_kaffeesatz_regularRg';
+    src: url('../Fonts/yanonekaffeesatz-webfont.eot');
+    src: url('../Fonts/yanonekaffeesatz-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/yanonekaffeesatz-webfont.woff') format('woff'),
+         url('../Fonts/yanonekaffeesatz-webfont.ttf') format('truetype'),
+         url('../Fonts/yanonekaffeesatz-webfont.svg#yanone_kaffeesatz_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family:  "Helvetica Neue", Helvetica, Georgia, Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #D7E2E5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.small { font-size:0.75em !important;}
+.smaller { font-size:0.7em !important;}
+
+/*---- Medium Font ---*/
+.medium { font-size: 0.8em !important;}
+.medium .homeTab li a{margin:8px 7px !important; }
+.medium .serText{font-size: 1.6em;}
+.medium .subHeading, .medium .pageHeadingH, .medium .pageHeading { font-size: 1.5em;}
+.medium .subPageHeading { font-size: 1.3em;}
+.medium .service h2 {font-size:1.4em;}
+.medium .homeTab li a .tabM { font-size: 120% !important; font-weight: bold;}
+.medium .moreNews { font-size: 1.2em;}
+
+
+.large { font-size:0.92em !important;}
+.large .nav {font-size: 0.85em !important;}
+.large  #nav a {padding: 0px 20px 0px 14px !important;}
+
+/*---- Larger Font ---*/
+.larger { font-size:1em !important;}
+.larger .homeTab li a{margin:8px 5px !important; }
+.larger .homeTab li a .tabM{padding:1px 10px !important;}
+.larger .nav {font-size: 0.9em !important;}
+.larger  #nav a {padding: 0px 20px 0px 10px !important;}
+.helpDesk { line-height: 24px;}

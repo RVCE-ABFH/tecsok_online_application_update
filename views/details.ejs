@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="FormsHead"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>
+	Educational Qualification
+</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="ContrastStyleSheet" href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link id="ContrastStyleSheet" href="/stylesheets/Layout.css" rel="stylesheet" type="text/css">
+<link id="CultureSheet" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+<link id="Link1" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css"><
+    <link href="/stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/PopStyles.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/fileuploader.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets../stylesheets/vscroller.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css">
+    <link id="SiteLayoutSheet" href="/stylesheets/Layout1.css" rel="stylesheet" type="text/css">
+    <link id="Link2" href="/stylesheets/Site1.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        /* The Modal (background) */
+        .mySessionModal-modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .mySessionModal-modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 400px;
+        }
+
+        /* The Close Button */
+        .mySessionModalclose {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .mySessionModalclose:hover, .mySessionModalclose:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+    
+
+
+
+   
+   
+    <style type="text/css">
+        .red {
+            color: Red !important;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+    </style>
+
+<body onload="  " onpageshow="">
+    <div class="topdiv">
+        <div class="topbuton container">
+        </div>
+    </div>
+    <div class="top_banner">
+        <div class="container in_banner">
+            <div class=" logo col-md-3 col-sm-3 col-xs-12">
+                <img id="" class="img-responsive" src="http://www.tecsok.com/wp-content/uploads/2018/02/tecsok-2.png" style="border-width:0px;">
+               
+            </div>
+            <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+                <h2 class="text-center">
+                    <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
+                </h2>
+                <h4 class="text-center">
+                    <span id="">Online Application Portal </span>
+                </h4>
+            </div>
+            <div class=" logo col-md-3 col-sm-3 col-xs-12">
+
+          
+                
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="">            
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" id="">HELP</a></li>  
+            <li><a href="/user/logout" id="">LOGOUT</a></li> 
+            
+
+             </ul>
+
+        </div>
+    </div>
+    </nav>
+   
+
+
+    <form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="FormsForm" enctype="multipart/form-data">
+
+
+
+
+
+
+
+        <div id="divnew" class="medium">
+            <div id="main">
+                
+                <div class="container-fluid" id="main-content">
+                    <div id="dvLeftMenu">
+                        <div>
+                            <div class="navbar-default sidebar" role="navigation">
+                                <div class="sidebar-nav navbar-collapse" aria-expanded="false" style="min-height: 570px; background-color: #bd135b;">
+                                    <ul class="nav in" id="side-menu">
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard"><i class="fa fa-home fa-fw"></i><span id="liHome">Home</span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/profile"><i class="fa fa-user fa-fw"></i><span id="liProfileCreation">Profile Creation</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/View"><i class="fa fa-angle-double-right fa-fw" style="background-color: white ; color: #bd135b;"></i><span id="liView" >View &amp; Print Profile</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-file fa-fw"></i><span id="lionlineApp">Online Application</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/application"><i class="fa fa-street-view fa-fw"></i><span id="liMyApplication">My Application</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/request"><i class="fa fa-user fa-fw"></i><span id="liMyRequest">My Request</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-info-circle fa-fw"></i><span id="liHelp">Help</span></a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-wrapper">
+                        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'FormsForm', ['tctl00$FormsPH$UpotherDet','FormsPH_UpotherDet','tctl00$FormsPH$UpdatePanel1','FormsPH_UpdatePanel1','tctl00$UpdRandomToken','UpdRandomToken'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+                        
+    <table id="FormsPH_tblMain" width="100%">
+	<tbody><tr>
+		<td>
+                
+
+<script type="text/javascript">
+
+    $(function () {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+      
+        // passes on every "a" tag 
+        $("#cssmenu a").each(function () {
+           
+            // checks if its the same on the address bar
+            if (url.indexOf($(this).attr('navigateurl')) > 0) {
+                
+                if ($(this).closest("li").hasClass("Complete")) {
+                    $(this).closest("li").removeClass("Complete");
+                    $(this).closest("li").addClass("CompleteActive");
+                }
+
+                if ($(this).closest("li").hasClass("InComplete")) {
+                    $(this).closest("li").removeClass("InComplete");
+                    $(this).closest("li").addClass("InCompleteActive");
+                }
+            }
+
+        });
+
+
+    });
+
+
+    function SelectProfileTab(ProfileTabID) {
+
+        var varUnsavedChanges = document.getElementById('FormsPH_uxProfileMenu_hdnUnsavedChanges').value;
+
+        if (varUnsavedChanges == 'Unsaved') {
+            if (confirm('It looks like you have been editing something. \nIf you leave before saving, your changes will be lost.')) {
+                SetProfileTab(ProfileTabID);
+            }
+        }
+        else {
+            SetProfileTab(ProfileTabID);
+        }
+    }
+
+    function SetProfileTab(TabID) {
+
+        if (TabID == 'PersonalForm') {
+            location.href = 'PersonalForm.aspx';
+        }
+        if (TabID == 'AddressForm') {
+            location.href = 'AddressForm.aspx';
+        }
+        if (TabID == 'OtherInfoForm') {
+            location.href = 'OtherInfoForm.aspx';
+        }
+        if (TabID == 'QualificationForm') {
+            location.href = 'QualificationForm.aspx';
+        }
+        if (TabID == 'ExperienceForm') {
+            location.href = 'ExperienceForm.aspx';
+        }
+        if (TabID == 'PhotoSignForm') {
+            location.href = 'PhotoSignForm.aspx';
+        }
+        if (TabID == 'DocumentsForm') {
+            location.href = 'DocumentsForm.aspx';
+        }
+    }
+</script>
+<table>
+    <tbody><br><br>
+    <tr>
+        <td colspan="3">
+            <div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                                                
+                                                         
+                                                
+                    <li id="FormsPH_uxProfileMenu_ProfileStep1" class="Complete"><a href="/<%=user.username%>/profile"  >
+                        <span id="FormsPH_uxProfileMenu_stp1">&nbsp;&nbsp;Step1 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp1">&nbsp;&nbsp;Personal Details&nbsp&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep2" class="Complete"><a href="/<%=user.username%>/profile/address"  >
+                        <span id="FormsPH_uxProfileMenu_stp2">&nbsp;&nbsp;Step2 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp2">&nbsp;&nbsp;Address Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep3" class="Complete"><a href="/<%=user.username%>/profile/details"  >
+                        <span id="FormsPH_uxProfileMenu_stp3">&nbsp;&nbsp;Step3 &nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp3">&nbsp;&nbsp;Other Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep4" class="CompleteActive"><a href="/<%=user.username%>/profile/education"  >
+                        <span id="FormsPH_uxProfileMenu_stp4">&nbsp;&nbsp;Step4 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp4">&nbsp;&nbsp;Educational Qualification&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep5" class="InComplete"><a href="/<%=user.username%>/profile/work"  >
+                        <span id="FormsPH_uxProfileMenu_stp5">&nbsp;&nbsp;Step5 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp5">&nbsp;&nbsp;Work Experience Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep6" class="Complete"><a href="/<%=user.username%>/profile/photo" >
+                        <span id="FormsPH_uxProfileMenu_stp6">&nbsp;&nbsp;Step6 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp6">&nbsp;&nbsp;Upload Photo / Signature&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep7" class="Complete"><a href="/<%=user.username%>/profile/documents" >
+                        <span id="FormsPH_uxProfileMenu_stp7">&nbsp;&nbsp;Step7 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp7">&nbsp;&nbsp;Upload Documents&nbsp;&nbsp;</span>
+                    </a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <hr style="background-color: #0183b5;">
+            <input type="hidden" name="ctl00$FormsPH$uxProfileMenu$hdnUnsavedChanges" id="FormsPH_uxProfileMenu_hdnUnsavedChanges">
+        </td>
+    </tr>
+</tbody></table>
+
+            </td>
+	</tr>
+	<tr>
+		<td valign="top">
+                <div id="FormsPH_tblotherDet1">
+                    <div id="FormsPH_UpotherDet">
+			
+                            <table width="100%">
+                                <tbody><tr>
+                                    <td width="100%">
+                                        <fieldset class="RFS">
+                                            <legend id="FormsPH_OtherDetails" class="RFSL">Other Details</legend>
+                                            <table width="100%" class="t_default">
+                                                <tbody><tr>
+                                                    <td style="text-align: left; width: 50%;">
+                                                        <span id="FormsPH_LBLEx1">Are you Ex-Serviceman ?</span><span class="red">*
+                                                        </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlIsExService" id="FormsPH_ddlIsExService" onchange="IsExservice(this);">
+				<option value="0">Select</option>
+				<option selected="selected" value="N">No</option>
+				<option value="Y">Yes</option>
+
+			</select>
+                                                        <span id="FormsPH_ReqIsExService0" style="color:Red;display:none;">Information is Mandatory</span>
+                                                    </td>
+                                                    <td>
+                                                        <table id="FormsPH_tdExServiceTime" width="100%" style="display:none;">
+				<tbody><tr>
+					<td style="text-align: left; border: none;">
+                                                                    <span id="FormsPH_LBLEx2">No. of years of service rendered in Army/Navy/Air Force</span>
+                                                                    <span class="red">* </span>
+                                                                    <br>
+                                                                    <input name="ctl00$FormsPH$txtExServiceYears" type="text" maxlength="2" id="FormsPH_txtExServiceYears" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" onchange="return CheckYear(this, event)" style="width:68px;">
+                                                                    <span id="FormsPH_ReqExServiceYears" style="color:Red;display:none;">Information is Mandatory</span>
+                                                                </td>
+					<td style="text-align: left; border: none;">
+                                                                    <span id="FormsPH_LBLEx3">Months</span>
+                                                                    <span class="red">* </span>
+                                                                    <br>
+                                                                    <input name="ctl00$FormsPH$txtExServiceMonths" type="text" maxlength="2" id="FormsPH_txtExServiceMonths" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" onchange="return CheckMonth(this, event)" style="width:68px;">
+                                                                    <span id="FormsPH_ReqExServiceMonths" style="color:Red;display:none;">Information is Mandatory</span>
+                                                                </td>
+					<td style="text-align: left; border: none;">
+                                                                    <span id="FormsPH_LBLEx4">Days</span>
+                                                                    <span class="red">* </span>
+                                                                    <br>
+                                                                    <input name="ctl00$FormsPH$txtExServiceDays" type="text" maxlength="2" id="FormsPH_txtExServiceDays" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" onchange="return CheckDays(this, event)" style="width:68px;">
+                                                                    <span id="FormsPH_ReqExServiceDays" style="color:Red;display:none;">Information is Mandatory</span>
+                                                                </td>
+				</tr>
+			</tbody></table>
+			
+                                                    </td>
+                                                </tr>
+                                                <tr id="FormsPH_TrExserviceDateOfDischarge" style="display:none;">
+				<td>
+                                                        <span id="FormsPH_lblExserviceDateOfDischarge">Date of Discharge:</span><span class="red">* </span>
+                                                        <br>
+                                                        <input type="hidden" name="ctl00$FormsPH$MaskedEditExtender2_ClientState" id="FormsPH_MaskedEditExtender2_ClientState">
+                                                        <input name="ctl00$FormsPH$txtExserviceDateOfDischarge" type="text" id="FormsPH_txtExserviceDateOfDischarge" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;">
+                                                        <br>
+                                                        <span id="FormsPH_ReqExserviceDateOfDischarge" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+				<td>
+                                                        <span id="FormsPH_lblExserviceReasoneDischarge">Reason for discharge:</span><span class="red">* </span>
+                                                        <br>
+                                                        <textarea name="ctl00$FormsPH$txtExserviceReasoneDischarge" rows="2" cols="20" id="FormsPH_txtExserviceReasoneDischarge" class="form-control" oncopy="return false;" onpaste="return false;" style="height:40px;"></textarea>
+                                                        <span id="FormsPH_ReqExserviceReasoneDischarge" style="color:Red;visibility:hidden;">Information is mandatory</span>
+                                                    </td>
+			</tr>
+			
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormsPH_lblDependantBattleCasualty">Are you a dependant  of a Battle Casualty Military Person(Battle casualty cases where Military personnel are killed or disabled during war/war like operations ?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddllblDependantBattleCasualty" id="FormsPH_ddllblDependantBattleCasualty" onchange="IsDependantBattleCasualty(this);">
+				<option value="0">Select</option>
+				<option selected="selected" value="N">No</option>
+				<option value="Y">Yes</option>
+
+			</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqDependantBattleCasualty" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+                                                    <td id="FormsPH_TdDependantBattleCasualtyReason" style="display:none;">
+                                                        <span id="FormsPH_lblDependantBattleCasualtyReason">Reason</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddllblDependantBattleCasualtyReason" id="FormsPH_ddllblDependantBattleCasualtyReason">
+				<option selected="selected" value="">--Select--</option>
+				<option value="KINW">Killed in war</option>
+				<option value="KINWLKOPR">Killed in war like operation</option>
+				<option value="DINW">Disabled in war</option>
+				<option value="DINWLKOPR">Disabled in  war like operation</option>
+
+			</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqDependantBattleCasualtyReason" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormsPH_LBLO6">Are you a Government employee?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlIsGOMEmployee" id="FormsPH_ddlIsGOMEmployee" onchange="IsGOMEmployee(this);">
+				<option value="0">Select</option>
+				<option selected="selected" value="N">No</option>
+				<option value="Y">Yes</option>
+
+			</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqIsGOMEmployee0" style="color:Red;display:none;">Information is Mandatory</span>
+                                                    </td>
+                                                    <td id="FormsPH_TdGOMEmployeeNameDept" style="display:none;">
+                                                        <span id="FormsPH_lblGOMEmployeeNameDept">Name of the department:</span><span class="red">* </span>
+                                                        <br>
+                                                        <input name="ctl00$FormsPH$txtGOMEmployeeNameDept" type="text" maxlength="200" id="FormsPH_txtGOMEmployeeNameDept" onkeypress="return isCharKey(this, event)" onkeyup="this.value=this.value.toUpperCase()" oncopy="return false;" onpaste="return false;" style="width:300px;"><br>
+                                                        <span id="FormsPH_ReqGOMEmployeeNameDept" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			
+                                                </tr>
+                                                <tr id="FormsPH_TrGOMEmployeeDesignation" style="display:none;">
+				<td>
+                                                        <span id="FormsPH_lblGOMEmployeeDesignation">Designation</span><span class="red">* </span>
+                                                        <br>
+                                                        <input name="ctl00$FormsPH$txtGOMEmployeeDesignation" type="text" maxlength="200" id="FormsPH_txtGOMEmployeeDesignation" onkeypress="return isCharKey(this, event)" onkeyup="this.value=this.value.toUpperCase()" oncopy="return false;" onpaste="return false;" style="width:300px;">
+                                                        <br>
+                                                        <span id="FormsPH_ReqGOMEmployeeDesignation" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+				<td>
+                                                        <span id="FormsPH_lblGOMEmployeeJoiningDate">Joining date</span><span class="red">* </span>
+                                                        <br>
+                                                        <input type="hidden" name="ctl00$FormsPH$MaskedEditExtender1_ClientState" id="FormsPH_MaskedEditExtender1_ClientState">
+                                                        <input name="ctl00$FormsPH$txtGOMEmployeeJoiningDate" type="text" id="FormsPH_txtGOMEmployeeJoiningDate" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;">
+                                                        <br>
+                                                        <span id="FormsPH_ReqGOMEmployeeJoiningDate" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			</tr>
+			
+                                                <tr id="FormsPH_TrGOMEmployeeServiceYear" style="display:none;">
+				<td>
+                                                        <span id="FormsPH_lblGOMEmployeeServiceYear">No. of years of service</span><span class="red">* </span>
+                                                        <br>
+                                                        <input name="ctl00$FormsPH$txtGOMEmployeeServiceYear" type="text" maxlength="2" id="FormsPH_txtGOMEmployeeServiceYear" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;">
+                                                        <br>
+                                                        <span id="FormsPH_ReqGOMEmployeeServiceYear" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+				<td>
+                                                        <span id="FormsPH_lblGOMEmployeeNOC">Have you obtained NOC as per Rules?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddGOMEmployeeNOC" id="FormsPH_ddGOMEmployeeNOC">
+					<option selected="selected" value="0">Select</option>
+					<option value="N">No</option>
+					<option value="Y">Yes</option>
+
+				</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqGOMEmployeeNOC" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			</tr>
+			
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormsPH_lblClaimingRural">Are you claiming Rural reservation ?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlClaimingRural" id="FormsPH_ddlClaimingRural">
+				<option value="0">Select</option>
+				<option selected="selected" value="N">No</option>
+				<option value="Y">Yes</option>
+
+			</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqClaimingRural" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+                                                    <td>
+                                                        <span id="FormsPH_lblClaimingKanndaMdm">Are you claiming Kannada Medium Student reservation?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlClaimingKanndaMdm" id="FormsPH_ddlClaimingKanndaMdm">
+				<option value="0">Select</option>
+				<option selected="selected" value="N">No</option>
+				<option value="Y">Yes</option>
+
+			</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqClaimingKanndaMdm" style="color:Red;visibility:hidden;">Information is mandatory</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormsPH_lblClaimingProject">Are you claiming Project displaced person reservation?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlClaimingProject" id="FormsPH_ddlClaimingProject">
+				<option value="0">Select</option>
+				<option selected="selected" value="N">No</option>
+				<option value="Y">Yes</option>
+
+			</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqClaimingProject" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+                                                    <td>
+                                                        <span id="FormsPH_lblClaimingHydKnkRegion">Are you claiming Hyderabad-Karnataka Region  Reservation ?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlClaimingHydKnkRegion" id="FormsPH_ddlClaimingHydKnkRegion">
+				<option value="0">Select</option>
+				<option selected="selected" value="N">No</option>
+				<option value="Y">Yes</option>
+
+			</select>
+                                                        <br>
+                                                        <span id="FormsPH_lblBallaridistric" style="color:Red;">As per Govt  Order No. ಕಂಇ 139 ಭೂದಾಸು 2013 dated : 21-03-2018 and notification of even number dated 24-12-2018  Harapanahalli Taluk  has been  included  in Ballari district  and hence candidates from Harapanahalli taluk are also  eligible to claim H-K reservation.</span>
+                                                        <br>
+                                                        <span id="FormsPH_ReqClaimingHydKnkRegion" style="color:Red;visibility:hidden;">Information is mandatory</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+				<td>
+                                                        <span id="FormsPH_lblNationalCadet">Are you a candidate who has been released from the National Cadet Corps after service as whole time Cadet Instructor?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlNationalCadet" id="FormsPH_ddlNationalCadet" onchange="IsNationalCadet(this);">
+					<option value="0">Select</option>
+					<option selected="selected" value="N">No</option>
+					<option value="Y">Yes</option>
+
+				</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqNationalCadet" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+				<td id="FormsPH_TdNationalCadetYear" style="display:none;">
+                                                        <span id="FormsPH_lblNationalCadetYear">Number of years of service rendered as Cadet Instructor</span><span class="red">* </span>
+                                                        <br>
+                                                        <input name="ctl00$FormsPH$txtNationalCadetYear" type="text" maxlength="2" id="FormsPH_txtNationalCadetYear" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;">
+                                                        <br>
+                                                        <span id="FormsPH_ReqNationalCadetYear" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			</tr>
+			
+                                                <tr>
+				<td>
+                                                        <span id="FormsPH_lblVillageGroupInspector">Are you a candidate who is or was a village Group Inspector appointed in a Rural Industrialisation Scheme sponsored by the State Government?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlVillageGroupInspector" id="FormsPH_ddlVillageGroupInspector" onchange="IsVillageGroupInspector(this);">
+					<option value="0">Select</option>
+					<option selected="selected" value="N">No</option>
+					<option value="Y">Yes</option>
+
+				</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqVillageGroupInspector" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+				<td id="FormsPH_TdVillageGroupInspectorYear" style="display:none;">
+                                                        <span id="FormsPH_lblVillageGroupInspectorYear">Number of years service as such village group instructor</span><span class="red">* </span>
+                                                        <br>
+                                                        <input name="ctl00$FormsPH$txtVillageGroupInspectorYear" type="text" maxlength="2" id="FormsPH_txtVillageGroupInspectorYear" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;">
+                                                        <br>
+                                                        <span id="FormsPH_ReqVillageGroupInspectorYear" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			</tr>
+			
+
+                                                <tr>
+				<td>
+                                                        <span id="FormsPH_lblCensusOrganisation">Are you a candidate who is or was holding a post under the Census Organisation of the Government of India in this State?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlCensusOrganisation" id="FormsPH_ddlCensusOrganisation" onchange="IsCensusOrganisation(this);">
+					<option value="0">Select</option>
+					<option selected="selected" value="N">No</option>
+					<option value="Y">Yes</option>
+
+				</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqCensusOrganisation" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+				<td id="FormsPH_TdCensusOrganisationYear" style="display:none;">
+                                                        <span id="FormsPH_lblCensusOrganisationYear">Number of years of service</span><span class="red">* </span>
+                                                        <br>
+                                                        <input name="ctl00$FormsPH$txtCensusOrganisationYear" type="text" maxlength="2" id="FormsPH_txtCensusOrganisationYear" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;">
+                                                        <br>
+                                                        <span id="FormsPH_ReqCensusOrganisationYear" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			</tr>
+			
+                                                <tr>
+				<td>
+                                                        <span id="FormsPH_lblBondedLabourer">Are You a candidate who is bonded labourer?</span><span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlBondedLabourer" id="FormsPH_ddlBondedLabourer">
+					<option value="0">Select</option>
+					<option selected="selected" value="N">No</option>
+					<option value="Y">Yes</option>
+
+				</select>
+                                                        <br>
+                                                        <span id="FormsPH_ReqBondedLabourer" style="color:Red;display:none;">Information is mandatory</span>
+                                                    </td>
+			</tr>
+			
+                                                
+                                                
+
+                                                
+                                            </tbody></table>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                                <tr>
+				<td width="100%">
+                                        <fieldset class="RFS">
+                                            <legend id="FormsPH_BlackList" class="RFSL">Black List</legend>
+                                            <table width="100%" class="t_default">
+                                                <tbody><tr>
+                                                    <td style="text-align: left; width: 50%;">
+                                                        <span id="FormsPH_LBL11">Is there any criminal case against you.?</span>
+                                                        <span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlWasCourtCaseFiled" id="FormsPH_ddlWasCourtCaseFiled" onchange="IsWasCourtCaseFiled(this);">
+					<option value="0">Select</option>
+					<option selected="selected" value="N">No</option>
+					<option value="Y">Yes</option>
+
+				</select>
+                                                        <span id="FormsPH_ReqWasCourtCaseFiled" style="color:Red;visibility:hidden;">Information is Mandatory</span>
+                                                    </td>
+				
+                                                    <td>
+                                                        <table id="FormsPH_TrWasCourtCaseCompleted" width="100%" border="0" style="display:none;">
+					<tbody><tr>
+						<td style="border: none; padding: 0; width: 30%;">
+                                                                    <span id="FormsPH_lblWasCourtCaseCompleted">Status of Criminal Case</span>
+                                                                    <span class="red">* </span>
+                                                                    <br>
+                                                                    <select name="ctl00$FormsPH$ddlWasCourtCaseCompleted" id="FormsPH_ddlWasCourtCaseCompleted" style="width:160px;">
+							<option selected="selected" value="">--Select--</option>
+							<option value="Acquitted">Acquitted</option>
+							<option value="Pending">Pending</option>
+							<option value="Convicted">Convicted</option>
+
+						</select>
+                                                                    <br>
+                                                                    <span id="FormsPH_ReqWasCourtCaseCompleted" class="alerttxt" style="color:Red;visibility:hidden;">Information is mandatory</span>
+                                                                </td>
+						<td id="FormsPH_TdCourtCaseNo" style="border: none; padding: 0;">
+                                                                    <span id="FormsPH_lblCourtCaseNo">Court Case No.</span><span class="red">*</span>
+                                                                    <br>
+                                                                    <input name="ctl00$FormsPH$txtCourtCaseNo" type="text" maxlength="50" id="FormsPH_txtCourtCaseNo" oncopy="return false;" onpaste="return false;" style="width:160px;">
+                                                                    <br>
+                                                                    <span id="FormsPH_ReqtxtCourtCaseNo" class="alerttxt" style="color:Red;visibility:hidden;">Information is mandatory</span>
+                                                                </td>
+						<td id="FormsPH_trWasCourtCaseCompletedDetails" style="border: none; padding: 0;">
+                                                                    <span id="FormsPH_lblWasCourtCaseCompletedDetails">Court Case Details </span><span class="red">*</span>
+                                                                    <br>
+                                                                    <textarea name="ctl00$FormsPH$txtWasCourtCaseCompletedDetails" rows="2" cols="20" id="FormsPH_txtWasCourtCaseCompletedDetails" oncopy="return false;" onpaste="return false;" style="height:40px;width:200px;"></textarea>
+                                                                    <br>
+                                                                    <span id="FormsPH_ReqWasCourtCaseCompletedDetails" class="alerttxt" style="color:Red;visibility:hidden;">Information is mandatory</span>
+                                                                </td>
+					</tr>
+				</tbody></table>
+				
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <span id="FormsPH_LBL5">Whether debarred or Black Listed for Examination / Selection held by KPSC ,UPSC ,other State PSCs, KEA, Railway Board,IPBS ,Universities and other  selecting /recruiting authorities?</span>
+                                                        <span class="red">* </span>
+                                                        <br>
+                                                        <select name="ctl00$FormsPH$ddlIsBlackListed" id="FormsPH_ddlIsBlackListed" onchange="BlackListed(this);">
+					<option value="0">Select</option>
+					<option selected="selected" value="N">No</option>
+					<option value="Y">Yes</option>
+
+				</select>
+                                                        <span id="FormsPH_ReqIsBlackListed" style="color:Red;display:none;">Information is Mandatory</span>
+                                                    </td>
+                                                    <td>
+                                                        <table id="FormsPH_tbBlackList" width="100%" style="display:none;">
+					<tbody><tr>
+						<td style="width: 120px; border: none;">
+                                                                    <span id="FormsPH_LBL6">From Date</span><span class="red">*
+                                                                    </span>
+                                                                    <br>
+                                                                    <input type="hidden" name="ctl00$FormsPH$MaskedEditExtenderFromBlackList_ClientState" id="FormsPH_MaskedEditExtenderFromBlackList_ClientState">
+                                                                    <input name="ctl00$FormsPH$txtFromBlackListDT" type="text" id="FormsPH_txtFromBlackListDT" onkeypress="return isNumberKey(this, event)" onchange="return CheckBlackFromdate();" oncopy="return false;" onpaste="return false;" onfocus="this.placeholder = &#39;&#39;" placeholder="dd/MM/yyyy">
+                                                                    <span id="FormsPH_ReqFromBlackListDT" style="color:Red;display:none;">Information is Mandatory</span>
+                                                                    
+                                                                </td>
+						<td style="width: 120px; border: none;">
+                                                                    <span id="FormsPH_LBL7">To Date</span><span class="red">*</span>
+                                                                    <br>
+                                                                    <input type="hidden" name="ctl00$FormsPH$MaskedEditExtenderToBlackList_ClientState" id="FormsPH_MaskedEditExtenderToBlackList_ClientState">
+                                                                    <input name="ctl00$FormsPH$txtToBlackListDT" type="text" id="FormsPH_txtToBlackListDT" onkeypress="return isNumberKey(this, event)" onchange="return CheckBlackdate();" oncopy="return false;" onpaste="return false;" onfocus="this.placeholder = &#39;&#39;" placeholder="dd/MM/yyyy">
+                                                                    <span id="FormsPH_ReqToBlackListDT" style="color:Red;display:none;">Information is Mandatory</span>
+                                                                    
+                                                                </td>
+					</tr>
+				</tbody></table>
+				
+                                                    </td>
+
+                                                </tr>
+                                            </tbody></table>
+                                        </fieldset>
+                                    </td>
+			</tr>
+			
+                                <tr>
+                                    <td align="center">
+                                        <input type="submit" name="ctl00$FormsPH$BtnSaveOtherDetls" value="Save" onclick="null" id="FormsPH_BtnSaveOtherDetls" class="positive" style="width:80px;">
+                                        <div id="FormsPH_ValidationSummary1" style="display:none;">
+
+			</div>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">&nbsp;
+                                    </td>
+                                </tr>
+
+                            </tbody></table>
+                        
+		</div>
+                </div>
+            </td>
+	</tr>
+</tbody></table>
+
+    <div id="FormsPH_UpdatePanel1">
+	
+            <div style="display: none;">
+                <input type="hidden" name="ctl00$FormsPH$hdnLangID" id="FormsPH_hdnLangID" value="1">
+                <input type="hidden" name="ctl00$FormsPH$HGender" id="FormsPH_HGender" value="M">
+                <span id="FormsPH_lblSrNo" style="display: none"></span>
+            </div>
+        
+</div>
+
+    <div id="FormsPH_UpdateProgress5" style="display:none;" role="status" aria-hidden="true">
+	
+            <div class="popUpDiv">
+                <div class="popUpBG">
+                </div>
+                <div class="popUpImage">
+                    <img src="./KARNATAKA PUBLIC SERVICE COMMISSION_files/pleaseWait.gif" alt="Please Wait!">
+                </div>
+            </div>
+        
+</div>
+
+                    </div>
+                </div>
+                </div>
+                </div>
+                </form>
+                <div class="rounded_footer">
+                    <div class="left_footer">
+                    </div>
+                    <div class="right_footer">
+                    </div>
+                </div>
+                </div>
+                <div class="cleaner">
+                </div>
+                <div id="footer">
+                <div class="container-fluid">
+                    <p>
+                        <span id="ctl00_lblDisclaimer"></span><span id="ctl00_lblVersion"> </span></p>
+                </div>
+                </div>
+                </body>
+                </html>
+                

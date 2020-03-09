@@ -61,6 +61,7 @@ app.get("/",function(req,res)
 app.use('/', require('./routes/index'));
 app.use("/user",require("./routes/users"));
 
+
 app.listen(5001,function()
 {
     console.log("server started at http://localhost:5001")

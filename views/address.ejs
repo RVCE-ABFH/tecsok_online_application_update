@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>
+            login
+        </title>
+        
+        <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+        <link id="ContrastStyleSheet" href="/stylesheets/Layout.css" rel="stylesheet" type="text/css">
+        <link id="CultureSheet" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+        <link id="Link1" href="../stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="/stylesheets/PopStyles.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/fileuploader.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/vscroller.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css">
+        <link id="SiteLayoutSheet" href="/stylesheets/Layout1.css" rel="stylesheet" type="text/css">
+        <link id="Link2" href="/stylesheets/Site1.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            /* The Modal (background) */
+            .mySessionModal-modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+    
+            /* Modal Content */
+            .mySessionModal-modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 400px;
+            }
+    
+            /* The Close Button */
+            .mySessionModalclose {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+    
+                .mySessionModalclose:hover, .mySessionModalclose:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+        </style>
+        <script type="text/javascript">
+            function burstCache() {
+                if (!navigator.onLine) {
+                    document.body.innerHTML = 'Loading...';
+                }
+            }
+            window.history.forward();
+            function noBack() { window.history.forward(); }
+        </script>
+         <style type="text/css">
+            .style1 {
+                width: 4px;
+            }
+    
+            .auto-style1 {
+                width: 618px;
+            }
+    
+            .prsnl_dtl {
+                width: 100%;
+            }
+    
+                .prsnl_dtl > tbody > tr > td, .prsnl_dtl > tbody > tr > th, .prsnl_dtl > tfoot > tr > td, .prsnl_dtl > tfoot > tr > th, .prsnl_dtl > thead > tr > td, .prsnl_dtl > thead > tr > th {
+                    padding: 8px;
+                    line-height: 1px;
+                    vertical-align: top;
+                    border-top: 1px solid #ddd;
+                }
+    
+            .auto-style2 {
+                width: 3px;
+            }
+        </style>
+       
+    </head>
+    
+ 
+    <body>
+        <div class="topdiv">
+            <div class="topbuton container">
+            </div>
+        </div>
+        <div class="top_banner">
+            <div class="container in_banner">
+                <div class=" logo col-md-3 col-sm-3 col-xs-12">
+                    <img id="" class="img-responsive" src="http://www.tecsok.com/wp-content/uploads/2018/02/tecsok-2.png" style="border-width:0px;">
+                   
+                </div>
+                <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="text-center">
+                        <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
+                    </h2>
+                    <h4 class="text-center">
+                        <span id="">Online Application Portal </span>
+                    </h4>
+                </div>
+                <div class=" logo col-md-3 col-sm-3 col-xs-12">
+    
+              
+                    
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="">            
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="">HELP</a></li>  
+                <li><a href="/user/logout" id="">LOGOUT</a></li> 
+                
+
+                 </ul>
+    
+            </div>
+        </div>
+        </nav>
+        <div id="divnew" class="medium">
+            <div id="main">
+                <div id="header">
+                    
+<style type="text/css">
+    #clockdiv
+    {
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size:  0.75em;
+    }
+
+        #clockdiv > div
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #2e62a4;
+            display: inline-block;
+        }
+
+        #clockdiv div > span
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #003481;
+            display: inline-block;
+        }
+
+    .smalltext
+    {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+     blink, .blink {
+         animation: blinker 1s linear infinite;
+         }
+         @keyframes blinker {  
+         50% { opacity: 0; }
+         }
+</style>
+
+
+
+
+
+                </div>
+                <div class="container-fluid" id="main-content">
+                    <div id="dvLeftMenu">
+                        <div>
+                            <div class="navbar-default sidebar" role="navigation">
+                                <div class="sidebar-nav navbar-collapse" aria-expanded="false" style="min-height: 530px; background-color: #bd135b;">
+                                    <ul class="nav in" id="side-menu">
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard"><i class="fa fa-home fa-fw"></i><span id="liHome">Home</span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/profile"><i class="fa fa-user fa-fw"></i><span id="liProfileCreation">Profile Creation</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/View"><i class="fa fa-angle-double-right fa-fw" style="background-color: white ; color: #bd135b;"></i><span id="liView" >View &amp; Print Profile</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-file fa-fw"></i><span id="lionlineApp">Online Application</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/application"><i class="fa fa-street-view fa-fw"></i><span id="liMyApplication">My Application</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/request"><i class="fa fa-user fa-fw"></i><span id="liMyRequest">My Request</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-info-circle fa-fw"></i><span id="liHelp">Help</span></a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                <!-- /.sidebar-collapse -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-wrapper">
+                        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'FormsForm', ['tctl00$FormsPH$UPAdd','FormsPH_UPAdd','tctl00$FormsPH$UpdatePanel1','FormsPH_UpdatePanel1','tctl00$UpdRandomToken','UpdRandomToken'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+                        
+    <table id="FormsPH_tblMain" width="100%">
+	<tbody><tr>
+		<td>
+                
+
+<script type="text/javascript">
+
+    $(function () {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+      
+        // passes on every "a" tag 
+        $("#cssmenu a").each(function () {
+           
+            // checks if its the same on the address bar
+            if (url.indexOf($(this).attr('navigateurl')) > 0) {
+                
+                if ($(this).closest("li").hasClass("Complete")) {
+                    $(this).closest("li").removeClass("Complete");
+                    $(this).closest("li").addClass("CompleteActive");
+                }
+
+                if ($(this).closest("li").hasClass("InComplete")) {
+                    $(this).closest("li").removeClass("InComplete");
+                    $(this).closest("li").addClass("InCompleteActive");
+                }
+            }
+
+        });
+
+
+    });
+
+
+    function SelectProfileTab(ProfileTabID) {
+
+        var varUnsavedChanges = document.getElementById('FormsPH_uxProfileMenu_hdnUnsavedChanges').value;
+
+        if (varUnsavedChanges == 'Unsaved') {
+            if (confirm('It looks like you have been editing something. \nIf you leave before saving, your changes will be lost.')) {
+                SetProfileTab(ProfileTabID);
+            }
+        }
+        else {
+            SetProfileTab(ProfileTabID);
+        }
+    }
+
+    function SetProfileTab(TabID) {
+
+        if (TabID == 'PersonalForm') {
+            location.href = 'PersonalForm.aspx';
+        }
+        if (TabID == 'AddressForm') {
+            location.href = 'AddressForm.aspx';
+        }
+        if (TabID == 'OtherInfoForm') {
+            location.href = 'OtherInfoForm.aspx';
+        }
+        if (TabID == 'QualificationForm') {
+            location.href = 'QualificationForm.aspx';
+        }
+        if (TabID == 'ExperienceForm') {
+            location.href = 'ExperienceForm.aspx';
+        }
+        if (TabID == 'PhotoSignForm') {
+            location.href = 'PhotoSignForm.aspx';
+        }
+        if (TabID == 'DocumentsForm') {
+            location.href = 'DocumentsForm.aspx';
+        }
+    }
+</script>
+<table>
+    <tbody>
+        <br><br>
+    <tr>
+        <td colspan="3">
+            <div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                                                
+                                                         
+                                                
+                    <li id="FormsPH_uxProfileMenu_ProfileStep1" class="Complete"><a href="/<%=user.username%>/profile"  >
+                        <span id="FormsPH_uxProfileMenu_stp1">&nbsp;&nbsp;Step1 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp1">&nbsp;&nbsp;Personal Details&nbsp&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep2" class="Complete"><a href="/<%=user.username%>/profile/address"  >
+                        <span id="FormsPH_uxProfileMenu_stp2">&nbsp;&nbsp;Step2 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp2">&nbsp;&nbsp;Address Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep3" class="Complete"><a href="/<%=user.username%>/profile/details"  >
+                        <span id="FormsPH_uxProfileMenu_stp3">&nbsp;&nbsp;Step3 &nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp3">&nbsp;&nbsp;Other Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep4" class="CompleteActive"><a href="/<%=user.username%>/profile/education"  >
+                        <span id="FormsPH_uxProfileMenu_stp4">&nbsp;&nbsp;Step4 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp4">&nbsp;&nbsp;Educational Qualification&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep5" class="InComplete"><a href="/<%=user.username%>/profile/work"  >
+                        <span id="FormsPH_uxProfileMenu_stp5">&nbsp;&nbsp;Step5 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp5">&nbsp;&nbsp;Work Experience Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep6" class="Complete"><a href="/<%=user.username%>/profile/photo" >
+                        <span id="FormsPH_uxProfileMenu_stp6">&nbsp;&nbsp;Step6 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp6">&nbsp;&nbsp;Upload Photo / Signature&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep7" class="Complete"><a href="/<%=user.username%>/profile/documents" >
+                        <span id="FormsPH_uxProfileMenu_stp7">&nbsp;&nbsp;Step7 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp7">&nbsp;&nbsp;Upload Documents&nbsp;&nbsp;</span>
+                    </a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <hr style="background-color: #0183b5;">
+            <input type="hidden" name="ctl00$FormsPH$uxProfileMenu$hdnUnsavedChanges" id="FormsPH_uxProfileMenu_hdnUnsavedChanges">
+        </td>
+    </tr>
+</tbody></table>
+
+            </td>
+	</tr>
+	<tr>
+		<td valign="top">
+                <div>
+                    <div id="FormsPH_tblAdd1">
+                        <div id="FormsPH_UPAdd">
+			
+                                <table width="100%">
+                                    <tbody><tr id="FormsPH_trSameasPresentaddress">
+				<td width="100%">
+                                            <fieldset id="SameasPresentaddress" class="RFS">
+                                                <legend id="FormsPH_PermanentResidenceDetails" class="RFSL">Permanent Address</legend>
+                                                <table class="t_default" width="100%">
+                                                    <tbody><tr>
+                                                        <td style="text-align: left;" colspan="3">
+                                                            <span id="FormsPH_PermanentAddress">Address</span><span class="red">*</span>
+                                                            <br>
+                                                            <textarea name="ctl00$FormsPH$txtPermanentAddress" rows="5" cols="20" id="FormsPH_txtPermanentAddress" title="Address" onfocus="this.placeholder = &#39;&#39;" placeholder="Address" onkeypress="return alphanumericText_only(&#39;(|,|)|-|.&#39;,event);" oncopy="return false;" onpaste="return false;" style="width:30%;"></textarea>
+                                                            <br>
+                                                            <span id="FormsPH_ReqPermanentAddredd" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PermanentStatecode">State / Union Territory</span>
+                                                            <span class="red">*</span>
+                                                            <br>
+                                                            <select name="ctl00$FormsPH$ddlPermanentStatecode" id="FormsPH_ddlPermanentStatecode" style="width:300px;">
+					
+
+				<option value="">Select State</option><option value="1">ANDAMAN &amp; NIKOBAR ISLANDS</option><option value="26">ANDHRA PRADESH</option><option value="9">ARUNACHAL PRADESH</option><option value="35">ASSAM</option><option value="29">BIHAR</option><option value="21">CHANDIGARH</option><option value="25">CHHATTISGARH</option><option value="33">DADRA &amp; NAGAR HAVELI</option><option value="10">DAMAN &amp; DIU</option><option value="7">DELHI</option><option value="32">GOA</option><option value="18">GUJARAT</option><option value="17">HARYANA</option><option value="30">HIMACHAL PRADESH</option><option value="2">JAMMU &amp; KASHMIR</option><option value="22">JHARKHAND</option><option value="24">KARNATAKA</option><option value="8">KERALA</option><option value="4">LAKSHADWEEP</option><option value="34">MADHYA PRADESH</option><option value="27">MAHARASHTRA</option><option value="20">MANIPUR</option><option value="15">MEGHALAYA</option><option value="28">MIZORAM</option><option value="12">NAGALAND</option><option value="3">ORISSA</option><option value="31">PUDUCHERRY</option><option value="5">PUNJAB</option><option value="6">RAJASTHAN</option><option value="13">SIKKIM</option><option value="19">TAMIL NADU</option><option value="36">Telangana</option><option value="11">TRIPURA</option><option value="23">UTTAR PRADESH</option><option value="14">UTTARAKHAND</option><option value="16">WEST BENGAL</option></select>
+                                                            <input type="hidden" name="ctl00$FormsPH$ccdddlPermanentStatecode_ClientState" id="FormsPH_ccdddlPermanentStatecode_ClientState" value="24:::KARNATAKA:::">
+                                                            <br>
+                                                            <span id="FormsPH_ReqPermanentStatecode" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PermanentDistrictcode">District</span>
+                                                            <span class="red">*</span>
+                                                            <br>
+                                                            <select name="ctl00$FormsPH$ddlPermanentDistrictcode" id="FormsPH_ddlPermanentDistrictcode" style="width:300px;">
+					
+
+				<option value="">Select District</option><option value="556">Bagalkot</option><option value="572">Bangalore</option><option value="583">Bangalore Rural</option><option value="555">Belgaum</option><option value="565">Bellary</option><option value="558">Bidar</option><option value="557">Bijapur</option><option value="578">Chamarajanagar</option><option value="582">Chikkaballapura</option><option value="570">Chikmagalur</option><option value="566">Chitradurga</option><option value="575">Dakshina Kannada</option><option value="567">Davanagere</option><option value="562">Dharwad</option><option value="561">Gadag</option><option value="579">Gulbarga</option><option value="574">Hassan</option><option value="564">Haveri</option><option value="576">Kodagu</option><option value="581">Kolar</option><option value="560">Koppal</option><option value="573">Mandya</option><option value="577">Mysore</option><option value="559">Raichur</option><option value="584">Ramanagara</option><option value="568">Shimoga</option><option value="571">Tumkur</option><option value="569">Udupi</option><option value="563">Uttara Kannada</option><option value="580">Yadgir</option></select>
+                                                            <input type="hidden" name="ctl00$FormsPH$ccdddlPermanentDistrictcode_ClientState" id="FormsPH_ccdddlPermanentDistrictcode_ClientState" value="575:::Dakshina Kannada:::">
+                                                            <br>
+                                                            <span id="FormsPH_ReqPermanentDistrictcode" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PermanentSubdistrictcode">Taluk</span>
+                                                            <span class="red">*</span>
+                                                            <br>
+                                                            <select name="ctl00$FormsPH$ddlPermanentSubdistrictcode" id="FormsPH_ddlPermanentSubdistrictcode" style="width:300px;">
+					
+
+				<option value="">Select</option><option value="05562">Bantval </option><option value="05563">Beltangadi </option><option value="05561">Mangalore</option><option value="05564">Puttur</option><option value="05565">Sulya </option></select>
+                                                            <input type="hidden" name="ctl00$FormsPH$ccdddlPermanentSubdistrictcode_ClientState" id="FormsPH_ccdddlPermanentSubdistrictcode_ClientState" value="05561:::Mangalore:::">
+                                                            <br>
+                                                            <span id="FormsPH_ReqPermanentSubdistrictcode" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PermanentVillageCode">Village/City</span>
+                                                            <span class="red">*</span>
+                                                            <br>
+                                                            <input name="ctl00$FormsPH$txtPermanentVillageCode" type="text" value="" maxlength="50" id="FormsPH_txtPermanentVillageCode" title="Enter Village Name" onfocus="this.placeholder = &#39;&#39;" placeholder="Enter Village Name" onkeypress="return isCharKey(this, event); " oncopy="return false;" onpaste="return false;" style="width:300px;"><br>
+                                                            <span id="FormsPH_rfvVillageCode" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PermanentPinCode">PinCode</span>
+                                                            <span class="red">*</span>
+                                                            <br>
+                                                            <input name="ctl00$FormsPH$txtPermanentPinCode" type="text" value="" maxlength="6" id="FormsPH_txtPermanentPinCode" title="Enter PinCode" onfocus="this.placeholder = &#39;&#39;" placeholder="Enter PinCode" onkeypress="return isNumberKeyOnly(this, event)" oncopy="return false;" onpaste="return false;" style="width:100px;"><br>
+                                                            <span id="FormsPH_ReqPermanentPinCode" class="alerttxt" style="color:Red;display:none;">Information is mandatory</span>
+                                                            <span id="FormsPH_RegPermanentPinCode" style="color:Red;display:none;">Pin code must be 6 numeric digits</span>
+                                                        </td>
+                                                         <td>&nbsp;</td>
+                                                    </tr>
+
+                                                </tbody></table>
+                                            </fieldset>
+                                        </td>
+			</tr>
+			
+                                    <tr>
+                                        <td>
+                                            <input name="ctl00$FormsPH$ChkSameasPresent" type="checkbox" id="FormsPH_ChkSameasPresent" onclick="IsSameAsPresent(this)" checked="checked">
+                                            <span id="FormsPH_SameasPresent">Tick if you Are residing at the permanent address ?</span>
+                                            <br>
+                                            &nbsp;&nbsp; 
+                                            <span id="FormsPH_lblcommunicationsAddress" style="color:Red;font-weight:bold;">KPSC Will Communicate With Correspondence Address So Enter Valid Address For Communication.</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr id="FormsPH_TrCorrespondenceAddress" style="display: none;">
+				<td width="100%">
+                                            <fieldset class="RFS">
+                                                <legend id="FormsPH_CorrespondenceAddress" class="RFSL">Correspondence Address</legend>
+                                                <table class="t_default">
+                                                    <tbody><tr>
+                                                        <td style="text-align: left;" colspan="3">
+                                                            <span id="FormsPH_PresentAddress">Address</span><span class="red">*</span>
+
+                                                            <br>
+                                                            <textarea name="ctl00$FormsPH$txtPresentAddress" rows="5" cols="20" id="FormsPH_txtPresentAddress" title="Enter Address" onfocus="this.placeholder = &#39;&#39;" placeholder="Enter Address" onkeypress="return alphanumericText_only(&#39;(|,|)|-|.&#39;,event);" oncopy="return false;" onpaste="return false;" style="width:30%;"></textarea>
+                                                            <br>
+                                                            <span id="FormsPH_ReqPresentAddress" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+
+
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PresentStatecode">State / Union Territory</span>
+                                                            <span class="red">* </span>
+                                                            <br>
+                                                            <select name="ctl00$FormsPH$ddlPresentStatecode" id="FormsPH_ddlPresentStatecode" style="width:300px;">
+					
+
+				<option value="">Select State</option><option value="1">ANDAMAN &amp; NIKOBAR ISLANDS</option><option value="26">ANDHRA PRADESH</option><option value="9">ARUNACHAL PRADESH</option><option value="35">ASSAM</option><option value="29">BIHAR</option><option value="21">CHANDIGARH</option><option value="25">CHHATTISGARH</option><option value="33">DADRA &amp; NAGAR HAVELI</option><option value="10">DAMAN &amp; DIU</option><option value="7">DELHI</option><option value="32">GOA</option><option value="18">GUJARAT</option><option value="17">HARYANA</option><option value="30">HIMACHAL PRADESH</option><option value="2">JAMMU &amp; KASHMIR</option><option value="22">JHARKHAND</option><option value="24">KARNATAKA</option><option value="8">KERALA</option><option value="4">LAKSHADWEEP</option><option value="34">MADHYA PRADESH</option><option value="27">MAHARASHTRA</option><option value="20">MANIPUR</option><option value="15">MEGHALAYA</option><option value="28">MIZORAM</option><option value="12">NAGALAND</option><option value="3">ORISSA</option><option value="31">PUDUCHERRY</option><option value="5">PUNJAB</option><option value="6">RAJASTHAN</option><option value="13">SIKKIM</option><option value="19">TAMIL NADU</option><option value="36">Telangana</option><option value="11">TRIPURA</option><option value="23">UTTAR PRADESH</option><option value="14">UTTARAKHAND</option><option value="16">WEST BENGAL</option></select>
+                                                            <input type="hidden" name="ctl00$FormsPH$ccdddlPresentStatecode_ClientState" id="FormsPH_ccdddlPresentStatecode_ClientState" value="24:::KARNATAKA:::">
+                                                            <br>
+                                                            <span id="FormsPH_ReqPresentddlPresentStatecode" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PresentDistrictcode">District</span>
+                                                            <span class="red">* </span>
+                                                            <br>
+                                                            <select name="ctl00$FormsPH$ddlPresentDistrictcode" id="FormsPH_ddlPresentDistrictcode" style="width:300px;">
+					
+
+				<option value="">Select District</option><option value="556">Bagalkot</option><option value="572">Bangalore</option><option value="583">Bangalore Rural</option><option value="555">Belgaum</option><option value="565">Bellary</option><option value="558">Bidar</option><option value="557">Bijapur</option><option value="578">Chamarajanagar</option><option value="582">Chikkaballapura</option><option value="570">Chikmagalur</option><option value="566">Chitradurga</option><option value="575">Dakshina Kannada</option><option value="567">Davanagere</option><option value="562">Dharwad</option><option value="561">Gadag</option><option value="579">Gulbarga</option><option value="574">Hassan</option><option value="564">Haveri</option><option value="576">Kodagu</option><option value="581">Kolar</option><option value="560">Koppal</option><option value="573">Mandya</option><option value="577">Mysore</option><option value="559">Raichur</option><option value="584">Ramanagara</option><option value="568">Shimoga</option><option value="571">Tumkur</option><option value="569">Udupi</option><option value="563">Uttara Kannada</option><option value="580">Yadgir</option></select>
+                                                            <input type="hidden" name="ctl00$FormsPH$ccdddlPresentDistrictcode_ClientState" id="FormsPH_ccdddlPresentDistrictcode_ClientState" value="575:::Dakshina Kannada:::">
+                                                            <br>
+                                                            <span id="FormsPH_ReqPresentDistrictcode0" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PresentSubdistrictcode">Taluk</span>
+                                                            <span class="red">* </span>
+                                                            <br>
+                                                            <select name="ctl00$FormsPH$ddlPresentSubdistrictcode" id="FormsPH_ddlPresentSubdistrictcode" style="width:300px;">
+					
+
+				<option value="">Select</option><option value="05562">Bantval </option><option value="05563">Beltangadi </option><option value="05561">Mangalore</option><option value="05564">Puttur</option><option value="05565">Sulya </option></select>
+                                                            <input type="hidden" name="ctl00$FormsPH$ccdddlPresentSubdistrictcode_ClientState" id="FormsPH_ccdddlPresentSubdistrictcode_ClientState" value="05561:::Mangalore:::">
+                                                            <br>
+                                                            <span id="FormsPH_ReqPresentSubdistrictcode0" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PresentVillageCode">Village/City</span>
+                                                            <span class="red">* </span>
+                                                            <br>
+                                                            <input name="ctl00$FormsPH$txtPresentVillageCode" type="text" value="" maxlength="50" id="FormsPH_txtPresentVillageCode" title="Enter Village Name" onfocus="this.placeholder = &#39;&#39;" placeholder="Enter Village Name" onkeypress="return isCharKey(this, event); " oncopy="return false;" onpaste="return false;" style="width:300px;"><br>
+                                                            <span id="FormsPH_rfvPresentVillageCode" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                        </td>
+                                                        <td style="text-align: left">
+                                                            <span id="FormsPH_PresentPinCode">PinCode</span>
+                                                            <span class="red">* </span>
+                                                            <br>
+                                                            <input name="ctl00$FormsPH$txtPresentPinCode" type="text" value="" maxlength="6" id="FormsPH_txtPresentPinCode" title="Enter PinCode" onfocus="this.placeholder = &#39;&#39;" placeholder="Enter PinCode" onkeypress="return isNumberKeyOnly(this, event)" oncopy="return false;" onpaste="return false;" style="width:100px;"><br>
+                                                            <span id="FormsPH_ReqPresentPinCode0" class="alerttxt" style="color:Red;display:none;">Information is Mandatory</span>
+                                                            <span id="FormsPH_RegPresentPinCode" style="color:Red;display:none;">Pin code must be 6 numeric digits</span>
+                                                        </td>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+
+                                                </tbody></table>
+                                            </fieldset>
+                                        </td>
+			</tr>
+			
+
+                                    <tr>
+                                        <td align="center">
+                                            <table width="100%" border="0">
+                                                <tbody><tr>
+                                                    <td align="right" style="border: none; width: 55%">
+                                                        <input type="submit" name="ctl00$FormsPH$BtnSaveAddrs" value="Save" onclick="null" id="FormsPH_BtnSaveAddrs" class="positive" style="width:80px;">
+                                                        
+                                                    </td>
+                                                    <td style="border: none;" align="right">
+                                                        <input type="submit" name="ctl00$FormsPH$btnNext" value="Next" onclick=" return ConfirmNext(); ;" id="FormsPH_btnNext" class="positive" style="width:80px;">
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;<br>
+                                            <br>
+                                    </td></tr>
+                                </tbody></table>
+                            
+		</div>
+                    </div>
+                </div>
+                <div id="FormsPH_UpdatePanel1">
+			
+                        <div style="display: none;">
+                            <input type="hidden" name="ctl00$FormsPH$hdnLangID" id="FormsPH_hdnLangID" value="1">
+                            <input type="hidden" name="ctl00$FormsPH$hdnlblcommunicationsAddress" id="FormsPH_hdnlblcommunicationsAddress" value="KPSC Will Communicate With Correspondence Address So Enter Valid Address For Communication.">
+                        </div>
+                    
+		</div>
+            </td>
+	</tr>
+</tbody></table>
+
+    <div id="FormsPH_UpdateProgress5" style="display:none;" role="status" aria-hidden="true">
+	
+            <div class="popUpDiv">
+                <div class="popUpBG">
+                </div>
+                <div class="popUpImage">
+                    <img src="./KARNATAKA PUBLIC SERVICE COMMISSION_files/pleaseWait.gif" alt="Please Wait!">
+                </div>
+            </div>
+        
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded_footer">
+    <div class="left_footer">
+    </div>
+    <div class="right_footer">
+    </div>
+</div>
+</div>
+
+<div class="cleaner">
+</div>
+<div id="footer">
+<div class="container-fluid">
+    <p>
+        <span id="ctl00_lblDisclaimer"></span><span id="ctl00_lblVersion"> </span></p>
+
+</div>
+</div>
+
+</body>
+</html>

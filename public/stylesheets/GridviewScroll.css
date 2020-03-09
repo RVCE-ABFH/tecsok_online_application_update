@@ -1,0 +1,68 @@
+﻿
+
+.GridviewScrollHeader TH, .GridviewScrollHeader TD
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 0.8125em;;
+    padding: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    background-color:#B1C7DB;
+}
+.GridviewScrollItem TD
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 0.8125em;;
+    font-weight: normal;
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    margin:0;
+}
+.GridviewScrollItemAlt TD
+{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 0.8125em;;
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #FFFFFF;
+    background-color: #eee;
+    margin:0;
+}
+.GridviewScrollItem DIV, .GridHeader DIV
+{
+    border: 0px solid #000000;
+   
+   
+}
+.GridviewScrollPager 
+{
+    border-top: 1px solid #AAAAAA;
+    background-color: #FFFFFF;
+}
+.GridviewScrollPager TD
+{
+    padding-top: 3px;
+    font-size:  0.875em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.GridviewScrollPager A
+{
+    color: #666666;
+}
+
+.GridviewScrollPager SPAN
+{
+    font-size:  1em;
+    font-weight: bold;
+    
+}

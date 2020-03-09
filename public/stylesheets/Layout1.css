@@ -1,0 +1,460 @@
+﻿
+/* ------- Global CSS ----*/
+
+
+/*------------- Coded By Dhiraj Chouksey for Print Form in Feildset -------------*/
+
+@media print
+{
+    fieldset
+    {
+        border: none;
+    }
+    .RFS
+    {
+        box-shadow: 0px 0px 0px #ECECEC inset !important;
+    }
+
+}
+.fltRight
+{
+    float: right;
+    text-align: right;
+}
+.fltLeft
+{
+    float: left;
+    width: 45%;
+}
+.pageHeading > span span span
+{
+    overflow: auto;
+}
+.btnUpload
+{
+    background-image: url("../Images/upload.png");
+    background-origin: content-box;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    border: 1px solid #8FB2BF !important;
+    height: 25px;
+    padding: 2px;
+    text-align: right;
+    width: 86px !important;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #F8F8F8;
+}
+.btnUpload:hover
+{
+    background-color: #CCC;
+    background-size: 23px auto;
+}
+
+
+#FormsPH_FormSections > fieldset
+{
+    width: 500px !important;
+    float: right !important;
+}
+
+.report
+{
+    width: 100%;
+    border: 1px solid #000;
+    background: #fff;
+    font-family: arial;
+    font-size: 0.98em;
+    border-collapse: collapse;
+}
+.report td
+{
+    border: 1px solid #000;
+}
+.report h2
+{
+    font-size: 2.0em;
+}
+.report .left
+{
+    text-align: right;
+    padding: 8px;
+}
+.report .right
+{
+    text-align: left;
+    padding: 8px;
+}
+
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+.pnlBackGround
+{
+    position: fixed;
+    top: 10%;
+    left: 10px;
+    text-align: center;
+    background-color: White;
+    border: solid 2px black;
+}
+
+table span img
+{
+    width: 20px;
+    float: left;
+    padding-right: 10px;
+}
+
+.userpro
+{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.userpro input
+{
+    margin-right: 5px;
+}
+
+
+table.t_view
+{
+    background-color: #fff;
+    border: 1px solid #E1DFE0;
+    margin: 15px auto;
+    width: 100%;
+    padding: 2px;
+}
+.t_view caption
+{
+    padding: 5px;
+    font-size:  1.25em;
+    color: #12678D;
+    font-weight: bold;
+    font-family: 'Cardo' , serif;
+}
+.t_view th
+{
+    background-color: #3580b2;
+    color: #FFFFFF;
+    text-align: center;
+}
+.t_view th, .t_view td
+{
+    padding: 3px 5px;
+    vertical-align: top;
+}
+.t_view td
+{
+    background-color: #fff;
+    border-bottom: 1px solid #D3D3D3;
+    border-left: 1px solid #d3d3d3;
+}
+.t_view em
+{
+    color: #d73236;
+    font-weight: bold;
+}
+
+table.t_default
+{
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin: 3px auto;
+    width: 100%;
+}
+.t_default caption
+{
+    padding: 5px;
+    font-size:  1em;
+    color: #12678D;
+    font-weight: bold;
+    text-align: center;
+}
+.t_default th
+{
+    color: #ffffff;
+    background: #608cb0;
+    border-bottom: #608cb0 1px solid;
+    border-radius: 3px 3px 0 0;
+}
+.t_default th em
+{
+    font-size: 0.85em;
+    color: #fff;
+    font-weight: normal;
+    clear: both;
+    display: block;
+}
+.t_default th, .t_default td
+{
+    padding: 6px;
+    vertical-align: top;
+}
+.t_default td
+{
+    border-radius: 3px 3px 3px 3px;
+    border-right: 1px solid #d6d6d6;/*#79c4e0;*/
+    border-bottom: 1px solid #d6d6d6; /*#79c4e0;*/
+    background-color: #fefeff; /*#e4f2fa;*/
+    font-size: 1em;
+}
+.t_default em
+{
+    color: #d73236;
+    font-weight: bold;
+}
+
+
+
+
+
+/*----------------------------- RPS New Registration Tab CSS START ------------------------------*/
+MyTabStyle .ajax__tab_header
+{
+    font-family: "Helvetica Neue" , Arial, Sans-Serif;
+    font-size:  0.875em;
+    font-weight: bold;
+    display: block;
+}
+.MyTabStyle .ajax__tab_header .ajax__tab_outer
+{
+    /*border-color: #222;*/
+    color: #222;
+    margin-right: 3px; /*border: solid 1px #d7d7d7;*/
+    background-color: #0184B7;
+    border-radius: 4px 4px 0 0;
+}
+.MyTabStyle .ajax__tab_header .ajax__tab_inner
+{
+    border-color: #666;
+    color: #fff;
+    padding: 4px 10px;
+}
+.MyTabStyle .ajax__tab_hover .ajax__tab_outer
+{
+    background-color: #143D60;
+}
+.MyTabStyle .ajax__tab_hover .ajax__tab_inner
+{
+    color: #fff;
+}
+.MyTabStyle .ajax__tab_active .ajax__tab_outer
+{
+    /*border-bottom-color: #ffffff;*/
+    background-color: #76b501;
+}
+.MyTabStyle .ajax__tab_active .ajax__tab_inner
+{
+    color: #fff; /*border-color: #333;*/
+}
+.MyTabStyle .ajax__tab_body
+{
+    font-family: verdana,tahoma,helvetica;
+    font-size: 10pt;
+    background-color: #fff;
+    border-top-width: 0;
+    border-top: solid 1px #0184B7;
+    margin-top: 2px;
+    padding: 10px 0px;
+}
+
+/*----------------------------- RPS New Registration Tab CSS END ------------------------------*/
+
+.RFS fieldset
+{
+    width: 97% !important;
+    background: #fefeff;
+    border-spacing: 4px;
+    margin-left: 0px;
+    border: #608cb0 solid 1px; /*#a8dcf7*/
+    border-radius: 3px;
+}
+.RFS legend {
+       width: 100%;
+    font-family: 'Lato-Semibold', sans-serif;
+    font-size: 1em;
+    font-weight: normal !important;
+    letter-spacing: 0.05em;
+    color: #fff !important;
+    padding: 8px 8px;
+    background: #bd135b;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin: 1% 0 0 -1px;
+}
+
+fieldset .label
+{
+    padding: 5px;
+    border-collapse: collapse;
+    font-family: Arial, Verdana, Georgia;
+    font-size:  0.75em;
+    font-weight: normal;
+    color: #00569e;
+    text-align: left;
+    background-color: #c4e1ed;
+}
+
+
+fieldset span td
+{
+    padding: 5px;
+    border-collapse: collapse;
+    font-family: Arial, Verdana, Georgia;
+    font-size:  0.75em;
+    font-weight: normal;
+    color: #00569e;
+    text-align: left;
+    background-color: #c4e1ed;
+}
+
+.red
+{
+    color: Red !important;
+    font-weight: bold;
+    padding-left: 5px;
+    font-size:  2em !important;
+}
+
+
+.NMargin 
+{
+    margin-bottom: 5px;        
+}
+
+.NHide 
+{
+    display: none;
+}
+
+
+/*-------------------------------- Tab CSS Start ------------------------------------------------*/
+
+
+.fancy-green .ajax__tab_header
+{
+    background: #fff url(../Images/green_bg_Tab.gif) repeat-x;
+}
+.fancy-green .ajax__tab_hover .ajax__tab_outer, .fancy-green .ajax__tab_active .ajax__tab_outer
+{
+    background: #fff url(../Images/green_left_Tab.gif) no-repeat left top;
+}
+.fancy-green .ajax__tab_hover .ajax__tab_inner, .fancy-green .ajax__tab_active .ajax__tab_inner
+{
+    background: url(../Images/green_right_Tab.gif) no-repeat right top;
+}
+.fancy .ajax__tab_header
+{
+    font-size: 0.8125em;;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.ajax__tab_outer
+{
+    margin-right: 16px;
+    line-height: 26px;
+    bottom: -2px;
+    position: relative;
+    z-index: 1;
+}
+.fancy .ajax__tab_active .ajax__tab_outer, .fancy .ajax__tab_header .ajax__tab_outer, .fancy .ajax__tab_hover .ajax__tab_outer
+{
+    background: #d7ecf2;
+    border-radius: 5px 5px 0 0;
+    height: 35px;
+}
+/*.fancy .ajax__tab_active .ajax__tab_inner, .fancy .ajax__tab_header .ajax__tab_inner, .fancy .ajax__tab_hover .ajax__tab_inner
+{
+
+ margin-left: 16px; offset the width of the left image 
+}*/
+/*.fancy .ajax__tab_active .ajax__tab_tab, .fancy .ajax__tab_hover .ajax__tab_tab,*/.fancy .ajax__tab_header .ajax__tab_tab
+{
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    margin: 0px;
+    height: 25px;
+}
+.fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_active .ajax__tab_tab
+{
+    color: #fff;
+    background: #0c9ac8;
+    border-radius: 5px 5px 0 0;
+    margin: 0px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.fancy .ajax__tab_body
+{
+    font-family: Arial;
+    font-size: 10pt;
+    border-top: 0;
+    border: 1px solid #0c9ac8;
+    clear: both;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+}
+
+
+
+/*-------------------------------- Tab CSS Ends ------------------------------------------------*/
+
+
+
+
+
+
+.RFS
+{
+    margin: 1px auto;
+    border: 1px solid #6987AD;/*#a8dcf7;*/
+    padding-bottom: 10px;
+    -moz-border-radius-bottomleft: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 3px;
+    box-shadow: 2px 10px 15px #ECECEC inset;
+    min-height: 30px;
+    background-color: #fefeff;
+}
+
+.SectionTable .RFS
+{
+    width: 97% !important;
+    /*box-shadow: 2px 4px 15px #FFF inset;*/
+    background: #fefeff; /* #e4f2fa;*/
+    border-spacing: 4px;
+    margin-left: 0px;
+}
+.SectionTable .RFS legend
+{
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    color: #007CAB !important;
+    padding: 2px 5px;
+    background: #fefeff;
+    border-radius: 3px;
+    border: #608cb0 solid 1px; /*#4ea8c9*/
+}
+.RFS span
+{
+    color: #000;
+}
+
+

@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Upload photo/Signature
+        </title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+        <link id="ContrastStyleSheet" href="/stylesheets/Layout.css" rel="stylesheet" type="text/css">
+        <link id="CultureSheet" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+        <link id="Link1" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="/stylesheets/PopStyles.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/fileuploader.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/vscroller.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css">
+        <link id="SiteLayoutSheet" href="/stylesheets/Layout1.css" rel="stylesheet" type="text/css">
+        <link id="Link2" href="/stylesheets/Site1.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            /* The Modal (background) */
+            .mySessionModal-modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+    
+            /* Modal Content */
+            .mySessionModal-modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 400px;
+            }
+    
+            /* The Close Button */
+            .mySessionModalclose {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+    
+                .mySessionModalclose:hover, .mySessionModalclose:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+        </style>
+        <script type="text/javascript">
+            function burstCache() {
+                if (!navigator.onLine) {
+                    document.body.innerHTML = 'Loading.';
+                }
+            }
+            window.history.forward();
+            function noBack() { window.history.forward(); }
+        </script>
+         <style type="text/css">
+            .style1 {
+                width: 4px;
+            }
+    
+            .auto-style1 {
+                width: 618px;
+            }
+    
+            .prsnl_dtl {
+                width: 100%;
+            }
+    
+                .prsnl_dtl > tbody > tr > td, .prsnl_dtl > tbody > tr > th, .prsnl_dtl > tfoot > tr > td, .prsnl_dtl > tfoot > tr > th, .prsnl_dtl > thead > tr > td, .prsnl_dtl > thead > tr > th {
+                    padding: 8px;
+                    line-height: 1px;
+                    vertical-align: top;
+                    border-top: 1px solid #ddd;
+                }
+    
+            .auto-style2 {
+                width: 3px;
+            }
+        </style>
+        
+    </head>
+    
+ 
+    <body>
+        <div class="topdiv">
+            <div class="topbuton container">
+            </div>
+        </div>
+        <div class="top_banner">
+            <div class="container in_banner">
+                <div class=" logo col-md-3 col-sm-3 col-xs-12">
+                    <img id="" class="img-responsive" src="/stylesheets/tecsok-2.png" style="border-width:0px;">
+                   
+                </div>
+                <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="text-center">
+                        <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
+                    </h2>
+                    <h4 class="text-center">
+                        <span id="">Online Application Portal </span>
+                    </h4>
+                </div>
+                <div class=" logo col-md-3 col-sm-3 col-xs-12">
+    
+              
+                    
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="">            
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://localhost:8080/#" id="">HELP</a></li>  
+                <li><a href="http://localhost:8080/user/logout" id="">LOGOUT</a></li> 
+                
+
+                 </ul>
+    
+            </div>
+        </div>
+        </nav>
+        <div id="divnew" class="medium">
+            <div id="main">
+                <div id="header">
+                    
+<style type="text/css">
+    #clockdiv
+    {
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size:  0.75em;
+    }
+
+        #clockdiv > div
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #2e62a4;
+            display: inline-block;
+        }
+
+        #clockdiv div > span
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #003481;
+            display: inline-block;
+        }
+
+    .smalltext
+    {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+     blink, .blink {
+         animation: blinker 1s linear infinite;
+         }
+         @keyframes blinker {  
+         50% { opacity: 0; }
+         }
+</style>
+
+
+
+
+
+                </div>
+                <div class="container-fluid" id="main-content">
+                    <div id="dvLeftMenu">
+                        <div>
+                            <div class="navbar-default sidebar" role="navigation">
+                                <div class="sidebar-nav navbar-collapse" aria-expanded="false" style="min-height: 570px; background-color: #bd135b;">
+                                    <ul class="nav in" id="side-menu">
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard"><i class="fa fa-home fa-fw"></i><span id="liHome">Home</span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/profile"><i class="fa fa-user fa-fw"></i><span id="liProfileCreation">Profile Creation</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/View"><i class="fa fa-angle-double-right fa-fw" style="background-color: white ; color: #bd135b;"></i><span id="liView" >View &amp; Print Profile</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-file fa-fw"></i><span id="lionlineApp">Online Application</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/application"><i class="fa fa-street-view fa-fw"></i><span id="liMyApplication">My Application</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/request"><i class="fa fa-user fa-fw"></i><span id="liMyRequest">My Request</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-info-circle fa-fw"></i><span id="liHelp">Help</span></a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                <!-- /.sidebar-collapse -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-wrapper">
+                        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'FormsForm', ['tctl00$FormsPH$updExperience','FormsPH_updExperience','tctl00$FormsPH$UpdatePanel1','FormsPH_UpdatePanel1','tctl00$UpdRandomToken','UpdRandomToken'], [], ['ctl00$FormsPH$btnSubmitExp','FormsPH_btnSubmitExp','ctl00$FormsPH$btnSubbmit','FormsPH_btnSubbmit'], 90, 'ctl00');
+//]]>
+</script>
+
+                        
+    <div id="FormsPH_updExperience">
+	
+            <table id="FormsPH_tblMain" width="100%">
+		<tbody><tr>
+			<td>
+                        
+
+<script type="text/javascript">
+
+    $(function () {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+      
+        // passes on every "a" tag 
+        $("#cssmenu a").each(function () {
+           
+            // checks if its the same on the address bar
+            if (url.indexOf($(this).attr('navigateurl')) > 0) {
+                
+                if ($(this).closest("li").hasClass("Complete")) {
+                    $(this).closest("li").removeClass("Complete");
+                    $(this).closest("li").addClass("CompleteActive");
+                }
+
+                if ($(this).closest("li").hasClass("InComplete")) {
+                    $(this).closest("li").removeClass("InComplete");
+                    $(this).closest("li").addClass("InCompleteActive");
+                }
+            }
+
+        });
+
+
+    });
+
+
+    function SelectProfileTab(ProfileTabID) {
+
+        var varUnsavedChanges = document.getElementById('FormsPH_uxProfileMenu_hdnUnsavedChanges').value;
+
+        if (varUnsavedChanges == 'Unsaved') {
+            if (confirm('It looks like you have been editing something. \nIf you leave before saving, your changes will be lost.')) {
+                SetProfileTab(ProfileTabID);
+            }
+        }
+        else {
+            SetProfileTab(ProfileTabID);
+        }
+    }
+
+    function SetProfileTab(TabID) {
+
+        if (TabID == 'PersonalForm') {
+            location.href = 'PersonalForm.aspx';
+        }
+        if (TabID == 'AddressForm') {
+            location.href = 'AddressForm.aspx';
+        }
+        if (TabID == 'OtherInfoForm') {
+            location.href = 'OtherInfoForm.aspx';
+        }
+        if (TabID == 'QualificationForm') {
+            location.href = 'QualificationForm.aspx';
+        }
+        if (TabID == 'ExperienceForm') {
+            location.href = 'ExperienceForm.aspx';
+        }
+        if (TabID == 'PhotoSignForm') {
+            location.href = 'PhotoSignForm.aspx';
+        }
+        if (TabID == 'DocumentsForm') {
+            location.href = 'DocumentsForm.aspx';
+        }
+    }
+</script>
+<table>
+    <tbody><br><br>
+    <tr>
+        <td colspan="3">
+            <div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                                                
+                                                         
+                                                
+                    <li id="FormsPH_uxProfileMenu_ProfileStep1" class="Complete"><a href="/<%=user.username%>/profile"  >
+                        <span id="FormsPH_uxProfileMenu_stp1">&nbsp;&nbsp;Step1 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp1">&nbsp;&nbsp;Personal Details&nbsp&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep2" class="Complete"><a href="/<%=user.username%>/profile/address"  >
+                        <span id="FormsPH_uxProfileMenu_stp2">&nbsp;&nbsp;Step2 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp2">&nbsp;&nbsp;Address Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep3" class="Complete"><a href="/<%=user.username%>/profile/details"  >
+                        <span id="FormsPH_uxProfileMenu_stp3">&nbsp;&nbsp;Step3 &nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp3">&nbsp;&nbsp;Other Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep4" class="CompleteActive"><a href="/<%=user.username%>/profile/education"  >
+                        <span id="FormsPH_uxProfileMenu_stp4">&nbsp;&nbsp;Step4 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp4">&nbsp;&nbsp;Educational Qualification&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep5" class="InComplete"><a href="/<%=user.username%>/profile/work"  >
+                        <span id="FormsPH_uxProfileMenu_stp5">&nbsp;&nbsp;Step5 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp5">&nbsp;&nbsp;Work Experience Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep6" class="Complete"><a href="/<%=user.username%>/profile/photo" >
+                        <span id="FormsPH_uxProfileMenu_stp6">&nbsp;&nbsp;Step6 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp6">&nbsp;&nbsp;Upload Photo / Signature&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep7" class="Complete"><a href="/<%=user.username%>/profile/documents" >
+                        <span id="FormsPH_uxProfileMenu_stp7">&nbsp;&nbsp;Step7 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp7">&nbsp;&nbsp;Upload Documents&nbsp;&nbsp;</span>
+                    </a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <hr style="background-color: #0183b5;">
+            <input type="hidden" name="ctl00$FormsPH$uxProfileMenu$hdnUnsavedChanges" id="FormsPH_uxProfileMenu_hdnUnsavedChanges">
+        </td>
+    </tr>
+</tbody></table>
+
+                    </td>
+		</tr>
+		<tr>
+			<td valign="top">
+                        <div>
+                            <div>
+                                <fieldset class="RFS">
+                                    <legend id="FormsPH_ExperienceDetails" class="RFSL">Work Experience Details</legend>
+                                    <table width="100%" class="t_default">
+                                        <tbody><tr>
+                                            <td>
+                                                <span id="FormsPH_lblworkexp" style="font-size: large;">Do you have any work experience in Pvt., Govt. or Semi Govt. organisations (In Chronological order)?</span>&nbsp; 
+                                               <span style="font-weight:bold;font-size: medium;"><input id="FormsPH_rdYes" type="radio" name="ctl00$FormsPH$Experienced" value="rdYes" checked="checked" onclick="ConfirmExperience(this);"><label for="FormsPH_rdYes">Yes</label></span>
+                                                &nbsp;&nbsp;&nbsp;<span style="font-weight:bold;font-size: medium;"><input id="FormsPH_rdNo" type="radio" name="ctl00$FormsPH$Experienced" value="rdNo" onclick="  ConfirmExperience(this);"><label for="FormsPH_rdNo">No</label></span>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+                                    <div id="FormsPH_pnlExperience">
+				
+                                        <table width="100%" class="t_default">
+                                            <tbody><tr>
+                                                <td colspan="3" style="text-align: center; display: none;">
+                                                    <span id="FormsPH_LblExpMsg" style="font-size:Medium;font-weight:bold;color: Red">Please enter professional experience if you have any.It is not mandatory if you donot have experience.</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" style="text-align: center; display: none;">
+                                                    <span id="FormsPH_LblExpOrderMsg" style="font-weight:bold;color: Red">Fill all the experience details (Pvt. Govt. semi-govt. etc) in chronological order</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span id="FormsPH_lblEmployment">Employment (Present/Past)</span><span class="red">*</span>
+                                                    <br>
+                                                    <select name="ctl00$FormsPH$IsPresent" id="FormsPH_IsPresent" onchange="IsPast(this);" style="width:300px;">
+					<option selected="selected" value="">Select</option>
+					<option value="Pa">Past</option>
+					<option value="Pr">Present</option>
+
+				</select>
+                                                    <span id="FormsPH_ReqEmployment" style="color:Red;display:none;">Employment (Present/Past) : Information is Mandatory</span>
+                                                </td>
+                                                <td>
+                                                    <span id="FormsPH_lblOrgDept">Institution / Department / Organisation</span><span class="red">*</span>
+                                                    <br>
+                                                    <input name="ctl00$FormsPH$Department" type="text" maxlength="100" id="FormsPH_Department" title="Enter Institution/Department/Organisation" onfocus="this.placeholder = &#39;&#39;" placeholder="Enter Institution/Department/Organisation" onkeypress="return alphanumeric_only(&#39;&#39;,event);" oncopy="return false;" onpaste="return false;" style="width:300px;">
+                                                    <span id="FormsPH_RequiredFieldValidator1" style="color:Red;display:none;">Institution / Department / Organisation : Information is Mandatory</span>
+                                                </td>
+                                                <td>
+                                                    <span id="FormsPH_lblDesignation">Name of Post</span><span class="red">*</span>
+                                                    <br>
+                                                    <input name="ctl00$FormsPH$Designation" type="text" maxlength="100" id="FormsPH_Designation" title="Enter Designation(Post Held)" onfocus="this.placeholder = &#39;&#39;" placeholder="Enter Designation(Post Held)" onkeypress="return alphanumericText_only(&#39;(|)|-&#39;,event);" oncopy="return false;" onpaste="return false;" style="width:300px;">
+                                                    <span id="FormsPH_RequiredFieldValidator2" style="color:Red;display:none;">Name of Post : Information is Mandatory</span>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>
+                                                    <span id="FormsPH_lblPost">Experience Type</span><span class="red">*</span>
+                                                    <br>
+                                                    <select name="ctl00$FormsPH$NatureOfPost" id="FormsPH_NatureOfPost" class="NMargin" style="width:300px;">
+					<option selected="selected" value="">Select</option>
+					<option value="ADMINI">Administrative</option>
+					<option value="ANALYTICAL">Analytical Experience</option>
+					<option value="BANK">Banking</option>
+					<option value="CLER">Clerical</option>
+					<option value="DATAPRO">Data Processing</option>
+					<option value="DRIV">Driving</option>
+					<option value="FITTER">Fitter</option>
+					<option value="FORENSCI">Forensic Science</option>
+					<option value="INDUSTRY">Industry</option>
+					<option value="IT">IT</option>
+					<option value="JUDI">Judicial</option>
+					<option value="LABTECH">Lab Technician</option>
+					<option value="OTH">Others</option>
+					<option value="PROGR">Programming</option>
+					<option value="RESEAR">Research</option>
+					<option value="Teach">Teaching</option>
+					<option value="TRANSLATION">Translation</option>
+
+				</select>
+                                                    <span id="FormsPH_RequiredFieldValidator9" style="color:Red;display:none;">Experience Type : Information is Mandatory</span>
+                                                    <br>
+                                                    
+                                                    <span id="FormsPH_ReqOtherNatureOfPost" style="color:Red;display:none;">Experience Type : Information is Mandatory</span>
+
+
+                                                </td>
+                                                <td>
+                                                    <table style="width: 100%;">
+                                                        <tbody><tr>
+                                                            <td style="border: none;">
+                                                                <span id="FormsPH_lblFromDate">From Date</span><span class="red">*</span>
+                                                                <br>
+                                                                <input type="hidden" name="ctl00$FormsPH$MaskedEditExtender1_ClientState" id="FormsPH_MaskedEditExtender1_ClientState">
+                                                                <input name="ctl00$FormsPH$FromDate" type="text" id="FormsPH_FromDate" title="Select From Date" onfocus="this.placeholder = &#39;&#39;" placeholder="Select From Date" onchange="Checkdate(this),CalPeriod(this);" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" style="width:100px;">
+                                                                <br>
+                                                                <span id="FormsPH_ReqFromDate" style="color:Red;display:none;">From Date : Information is Mandatory</span>
+                                                            </td>
+                                                            <td style="border: none;">
+                                                                <span id="FormsPH_lblToDate" style="display:;">To Date</span>
+                                                                <span id="FormsPH_lblToDateStar" style="color:Red;display:;">*</span>
+                                                                <br>
+                                                                <input type="hidden" name="ctl00$FormsPH$MaskedEditExtender2_ClientState" id="FormsPH_MaskedEditExtender2_ClientState">
+                                                                <input name="ctl00$FormsPH$ToDate" type="text" id="FormsPH_ToDate" title="Select To Date" onfocus="this.placeholder = &#39;&#39;" placeholder="Select To Date" onchange="CalPeriod(this); " onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" style="width:100px;display:;">
+                                                                
+                                                                <br>
+                                                                <span id="FormsPH_ReqToDate" style="color:Red;display:none;">To Date : Information is Mandatory</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" style="border: none;"><span id="Span2" style="color: Blue;">Date format DD/MM/YYYY. </span></td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                                <td>
+                                                    <table style="width: 100%;">
+                                                        <tbody><tr>
+                                                            <td style="border: none;">
+                                                                <span id="FormsPH_lblYear">Years</span>
+                                                                <br>
+                                                                <input name="ctl00$FormsPH$PeriodYear" type="text" maxlength="2" id="FormsPH_PeriodYear" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" style="background-color:#EBEBE4;width:105px;">
+                                                            </td>
+                                                            <td style="border: none;">
+                                                                <span id="FormsPH_lblMonth">Months</span>
+                                                                <br>
+                                                                <input name="ctl00$FormsPH$PeriodMonth" type="text" maxlength="2" id="FormsPH_PeriodMonth" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" style="background-color:#EBEBE4;width:105px;">
+                                                            </td>
+                                                            <td style="border: none;">
+                                                                <span id="FormsPH_lblDay">Days</span>
+                                                                <br>
+                                                                <input name="ctl00$FormsPH$PeriodDays" type="text" maxlength="2" id="FormsPH_PeriodDays" onkeypress="return isNumberKey(this, event)" oncopy="return false;" onpaste="return false;" style="background-color:#EBEBE4;width:105px;">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <span id="FormsPH_lblOrganizationType">Organization Type</span><span class="red">*</span>
+                                                    <br>
+                                                    <select name="ctl00$FormsPH$ddlOrganizationType" id="FormsPH_ddlOrganizationType" style="width:300px;">
+					<option selected="selected" value="">Select</option>
+					<option value="CENTRALGOV">Central Government </option>
+					<option value="CENTRALPSU">Central PSU</option>
+					<option value="GOV">Government</option>
+					<option value="HIGHCOUTIND">High Courts of India</option>
+					<option value="PARLIAMENT">Parliament</option>
+					<option value="PRIVATE">Private</option>
+					<option value="SEMIGOV">Semi Government</option>
+					<option value="STATEGOV">State Government</option>
+					<option value="STATELEGISSECR">State Legislatures Secretariats</option>
+					<option value="STATEPSU">State PSU</option>
+					<option value="SUBORDINCOURT">Subordinates Court</option>
+					<option value="SUPCOUTIND">Supreme Court of India</option>
+
+				</select>
+                                                    <br>
+                                                    <span id="FormsPH_ReqOrganizationType" style="color:Red;display:none;">Organization Type : Information is Mandatory</span>
+                                                </td>
+                                                <td>&nbsp;</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <input type="submit" name="ctl00$FormsPH$btnSubbmit" value="Add" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$FormsPH$btnSubbmit&quot;, &quot;&quot;, true, &quot;a&quot;, &quot;&quot;, false, false))" id="FormsPH_btnSubbmit" class="positive">
+                                                    <div id="FormsPH_ExperienceErrorSummary" style="font-size:Large;display:none;">
+
+				</div>
+                                                </td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td colspan="3" align="center" style="border: none;">
+                                                    <input type="submit" name="ctl00$FormsPH$btnSubmitExp" value="Save" onclick="return CheckEditExp();" id="FormsPH_btnSubmitExp" class="positive" style="width:80px;"><input type="hidden" name="ctl00$FormsPH$HF_TransactionID" id="FormsPH_HF_TransactionID" value="0">
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    
+			</div>
+
+
+                                </fieldset>
+                            </div>
+                            <table width="100%" class="t_default">
+                                <tbody><tr>
+                                    <td style="border: none;" align="right">
+                                        <input type="submit" name="ctl00$FormsPH$btnNext" value="Next" onclick=" return ConfirmNext(); ;" id="FormsPH_btnNext" class="positive" style="width:80px;">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </td>
+		</tr>
+	</tbody></table>
+	
+        
+</div>
+    <div id="FormsPH_UpdateProgress5" style="display:none;" role="status" aria-hidden="true">
+	
+            <div class="popUpDiv">
+                <div class="popUpBG">
+                </div>
+                <div class="popUpImage">
+                    <img src="./Work Experience Details_files/pleaseWait.gif" alt="Please Wait!">
+                </div>
+            </div>
+        
+</div>
+
+
+    <div id="FormsPH_UpdatePanel1">
+	
+            <div style="display: none;">
+                <input type="hidden" name="ctl00$FormsPH$hdnConfirmExp" id="FormsPH_hdnConfirmExp" value="Are you sure you want to save Experience details?">
+                <input type="hidden" name="ctl00$FormsPH$hdnLangID" id="FormsPH_hdnLangID" value="1">
+                <input type="hidden" name="ctl00$FormsPH$hdnRowCount" id="FormsPH_hdnRowCount" value="0">
+                <input type="hidden" name="ctl00$FormsPH$hdv_valueExp" id="FormsPH_hdv_valueExp" value="0">
+                <input type="hidden" name="ctl00$FormsPH$hdnEditRow" id="FormsPH_hdnEditRow" value="Kindly Update Edited details.">
+                <span id="FormsPH_lblSrNo" style="display: none"></span>
+                <span id="FormsPH_Save" style="display: none"></span>
+                <span id="FormsPH_Add" style="display: none"></span>
+                <span id="FormsPH_Edit" style="display: none"></span>
+                <span id="FormsPH_Delete" style="display: none"></span>
+            </div>
+        
+</div>
+
+
+
+
+                    </div>
+                </div>
+                </div>
+                </div>
+                </body>
+                <div class="rounded_footer">
+                    <div class="left_footer">
+                    </div>
+                    <div class="right_footer">
+                    </div>
+                </div>
+                
+                <div class="cleaner">
+                </div>
+                <div id="footer">
+                <div class="container-fluid">
+                    <p>
+                        <span id="ctl00_lblDisclaimer"></span><span id="ctl00_lblVersion"> </span></p>
+                </div>
+                </div>
+                </html>

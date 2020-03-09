@@ -1,2 +1,173 @@
-<h1>welcome to dashboard</h1>
-<button><a href="/user/logout">logout</a></button>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="FormsHead"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>
+	Educational Qualification
+</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="ContrastStyleSheet" href="../stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link id="ContrastStyleSheet" href="../stylesheets/Layout.css" rel="stylesheet" type="text/css">
+<link id="CultureSheet" href="../stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+<link id="Link1" href="../stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/PopStyles.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/fileuploader.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets../stylesheets/vscroller.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css">
+    <link id="SiteLayoutSheet" href="../stylesheets/Layout1.css" rel="stylesheet" type="text/css">
+    <link id="Link2" href="../stylesheets/Site1.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        /* The Modal (background) */
+        .mySessionModal-modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .mySessionModal-modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 400px;
+        }
+
+        /* The Close Button */
+        .mySessionModalclose {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .mySessionModalclose:hover, .mySessionModalclose:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+    
+
+
+
+   
+   
+    <style type="text/css">
+        .red {
+            color: Red !important;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+    </style>
+
+<body onload="  " onpageshow="">
+    <div class="topdiv">
+        <div class="topbuton container">
+        </div>
+    </div>
+    <div class="top_banner">
+        <div class="container in_banner">
+            <div class=" logo col-md-3 col-sm-3 col-xs-12">
+                <img id="" class="img-responsive" src="http://www.tecsok.com/wp-content/uploads/2018/02/tecsok-2.png" style="border-width:0px;">
+               
+            </div>
+            <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+                <h2 class="text-center">
+                    <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
+                </h2>
+                <h4 class="text-center">
+                    <span id="">Online Application Portal </span>
+                </h4>
+            </div>
+            <div class=" logo col-md-3 col-sm-3 col-xs-12">
+
+          
+                
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="">            
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" id="">HELP</a></li>  
+            <li><a href="/user/logout" id="">LOGOUT</a></li> 
+            
+
+             </ul>
+
+        </div>
+    </div>
+    </nav>
+   
+
+
+    <form method="post" action="" onsubmit="javascript:return WebForm_OnSubmit();" id="FormsForm" enctype="multipart/form-data">
+
+
+
+
+
+
+
+        <div id="divnew" class="medium">
+            <div id="main">
+                
+                <div class="container-fluid" id="main-content">
+                    <div id="dvLeftMenu">
+                        <div>
+                            <div class="navbar-default sidebar" role="navigation">
+                                <div class="sidebar-nav navbar-collapse" aria-expanded="false" style="min-height: 570px; background-color: #bd135b;">
+                                    <ul class="nav in" id="side-menu">
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard"><i class="fa fa-home fa-fw"></i><span id="liHome">Home</span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/profile"><i class="fa fa-user fa-fw"></i><span id="liProfileCreation">Profile Creation</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/View"><i class="fa fa-angle-double-right fa-fw" style="background-color: white ; color: #bd135b;"></i><span id="liView" >View &amp; Print Profile</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-file fa-fw"></i><span id="lionlineApp">Online Application</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/application"><i class="fa fa-street-view fa-fw"></i><span id="liMyApplication">My Application</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/request"><i class="fa fa-user fa-fw"></i><span id="liMyRequest">My Request</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-info-circle fa-fw"></i><span id="liHelp">Help</span></a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    

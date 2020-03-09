@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Upload photo/Signature
+        </title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+        <link id="ContrastStyleSheet" href="/stylesheets/Layout.css" rel="stylesheet" type="text/css">
+        <link id="CultureSheet" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+        <link id="Link1" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="/stylesheets/PopStyles.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/fileuploader.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/vscroller.css" rel="stylesheet" type="text/css">
+        <link href="/stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css">
+        <link id="SiteLayoutSheet" href="/stylesheets/Layout1.css" rel="stylesheet" type="text/css">
+        <link id="Link2" href="/stylesheets/Site1.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            /* The Modal (background) */
+            .mySessionModal-modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+    
+            /* Modal Content */
+            .mySessionModal-modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 400px;
+            }
+    
+            /* The Close Button */
+            .mySessionModalclose {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+    
+                .mySessionModalclose:hover, .mySessionModalclose:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+        </style>
+        <script type="text/javascript">
+            function burstCache() {
+                if (!navigator.onLine) {
+                    document.body.innerHTML = 'Loading.';
+                }
+            }
+            window.history.forward();
+            function noBack() { window.history.forward(); }
+        </script>
+         <style type="text/css">
+            .style1 {
+                width: 4px;
+            }
+    
+            .auto-style1 {
+                width: 618px;
+            }
+    
+            .prsnl_dtl {
+                width: 100%;
+            }
+    
+                .prsnl_dtl > tbody > tr > td, .prsnl_dtl > tbody > tr > th, .prsnl_dtl > tfoot > tr > td, .prsnl_dtl > tfoot > tr > th, .prsnl_dtl > thead > tr > td, .prsnl_dtl > thead > tr > th {
+                    padding: 8px;
+                    line-height: 1px;
+                    vertical-align: top;
+                    border-top: 1px solid #ddd;
+                }
+    
+            .auto-style2 {
+                width: 3px;
+            }
+        </style>
+        
+    </head>
+    
+ 
+    <body>
+        <div class="topdiv">
+            <div class="topbuton container">
+            </div>
+        </div>
+        <div class="top_banner">
+            <div class="container in_banner">
+                <div class=" logo col-md-3 col-sm-3 col-xs-12">
+                    <img id="" class="img-responsive" src="http://www.tecsok.com/wp-content/uploads/2018/02/tecsok-2.png" style="border-width:0px;">
+                   
+                </div>
+                <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+                    <h2 class="text-center">
+                        <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
+                    </h2>
+                    <h4 class="text-center">
+                        <span id="">Online Application Portal </span>
+                    </h4>
+                </div>
+                <div class=" logo col-md-3 col-sm-3 col-xs-12">
+    
+              
+                    
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="">            
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://localhost:8080/#" id="">HELP</a></li>  
+                <li><a href="http://localhost:8080/user/logout" id="">LOGOUT</a></li> 
+                
+
+                 </ul>
+    
+            </div>
+        </div>
+        </nav>
+        <div id="divnew" class="medium">
+            <div id="main">
+                <div id="header">
+                    
+<style type="text/css">
+    #clockdiv
+    {
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size:  0.75em;
+    }
+
+        #clockdiv > div
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #2e62a4;
+            display: inline-block;
+        }
+
+        #clockdiv div > span
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #003481;
+            display: inline-block;
+        }
+
+    .smalltext
+    {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+     blink, .blink {
+         animation: blinker 1s linear infinite;
+         }
+         @keyframes blinker {  
+         50% { opacity: 0; }
+         }
+</style>
+
+
+
+
+
+                </div>
+                <div class="container-fluid" id="main-content">
+                    <div id="dvLeftMenu">
+                        <div>
+                            <div class="navbar-default sidebar" role="navigation">
+                                <div class="sidebar-nav navbar-collapse" aria-expanded="false" style="min-height: 570px; background-color: #bd135b;">
+                                    <ul class="nav in" id="side-menu">
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard"><i class="fa fa-home fa-fw"></i><span id="liHome">Home</span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/profile"><i class="fa fa-user fa-fw"></i><span id="liProfileCreation">Profile Creation</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/View"><i class="fa fa-angle-double-right fa-fw" style="background-color: white ; color: #bd135b;"></i><span id="liView" >View &amp; Print Profile</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-file fa-fw"></i><span id="lionlineApp">Online Application</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/application"><i class="fa fa-street-view fa-fw"></i><span id="liMyApplication">My Application</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/request"><i class="fa fa-user fa-fw"></i><span id="liMyRequest">My Request</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-info-circle fa-fw"></i><span id="liHelp">Help</span></a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                <!-- /.sidebar-collapse -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-wrapper">
+                        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'FormsForm', ['tctl00$UpdRandomToken','UpdRandomToken'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+                        
+    <div id="divToPrint">
+        <div id="" style="">
+	
+            <div>
+                <div class="">
+                    <!-- <p>write from here</p> -->
+                    <table>
+    <tbody><br><br>
+    <tr>
+        <td colspan="3">
+            <div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                                                
+                                                         
+                                                
+                    <li id="FormsPH_uxProfileMenu_ProfileStep1" class="Complete"><a href="/<%=user.username%>/profile"  >
+                        <span id="FormsPH_uxProfileMenu_stp1">&nbsp;&nbsp;Step1 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp1">&nbsp;&nbsp;Personal Details&nbsp&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep2" class="Complete"><a href="/<%=user.username%>/profile/address"  >
+                        <span id="FormsPH_uxProfileMenu_stp2">&nbsp;&nbsp;Step2 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp2">&nbsp;&nbsp;Address Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep3" class="Complete"><a href="/<%=user.username%>/profile/details"  >
+                        <span id="FormsPH_uxProfileMenu_stp3">&nbsp;&nbsp;Step3 &nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp3">&nbsp;&nbsp;Other Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep4" class="CompleteActive"><a href="/<%=user.username%>/profile/education"  >
+                        <span id="FormsPH_uxProfileMenu_stp4">&nbsp;&nbsp;Step4 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp4">&nbsp;&nbsp;Educational Qualification&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep5" class="InComplete"><a href="/<%=user.username%>/profile/work"  >
+                        <span id="FormsPH_uxProfileMenu_stp5">&nbsp;&nbsp;Step5 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp5">&nbsp;&nbsp;Work Experience Details&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep6" class="Complete"><a href="/<%=user.username%>/profile/photo" >
+                        <span id="FormsPH_uxProfileMenu_stp6">&nbsp;&nbsp;Step6 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp6">&nbsp;&nbsp;Upload Photo / Signature&nbsp;&nbsp;</span>
+                    </a></li>
+                    <li id="FormsPH_uxProfileMenu_ProfileStep7" class="Complete"><a href="/<%=user.username%>/profile/documents" >
+                        <span id="FormsPH_uxProfileMenu_stp7">&nbsp;&nbsp;Step7 :&nbsp;&nbsp;</span><br>
+                        <span id="FormsPH_uxProfileMenu_Lstp7">&nbsp;&nbsp;Upload Documents&nbsp;&nbsp;</span>
+                    </a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <hr style="background-color: #0183b5;">
+            <input type="hidden" name="ctl00$FormsPH$uxProfileMenu$hdnUnsavedChanges" id="FormsPH_uxProfileMenu_hdnUnsavedChanges">
+        </td>
+    </tr>
+</tbody></table>
+ <div id="FormsPH_UPImahe">
+			
+                                <fieldset class="RFS">
+                                    <legend id="FormsPH_UploadPhotoSign" class="RFSL">Upload Documents</legend>
+                                    <span class="red">All Documents are Mandatory to upload So upload all documents.</span>
+                                    <table width="100%" class="t_default">
+                                        <tbody><tr>
+                                            <td valign="top" width="100%">
+                                                <div>
+				<table class="tableClassInner" cellspacing="0" rules="all" border="1" id="FormsPH_gvProof" style="width:100%;border-collapse:collapse;">
+					<tbody><tr>
+						<th scope="col">Sr.No.</th><th scope="col">Details of Certificate</th><th scope="col">Certificate Identification Number</th><th scope="col">Edit</th><th scope="col">View</th>
+					</tr><tr>
+						<td style="width:40px;">
+                                                                <span id="FormsPH_gvProof_lblNo_0" title="Sr.No/Select" style="font-size: 12px;">1</span>
+                                                                
+                                                            </td><td>
+                                                                <span id="FormsPH_gvProof_lblProofName_0" style="font-size: 13px; padding-left: 5px;">PUC/12th/10+2</span>
+                                                            </td><td style="width:200px;">
+                                                                <center>
+                                                                    <span id="FormsPH_gvProof_lblProofNumber_0">RD2038815097122</span>
+                                                                </center>
+                                                            </td><td style="width:150px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkEditDoc_0" class="my_pinkBtn" href="javascript:__doPostBack(&#39;ctl00$FormsPH$gvProof$ctl02$lnkEditDoc&#39;,&#39;&#39;)">Edit</a>
+                                                                    
+                                                                    
+                                                                    
+                                                                </span>
+                                                            </td><td style="width:120px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkDoc_0" class="my_blueBtn" href="javascript:NavigatePublicFileNewee(&quot;FF8A65DC-F7F4-4785-9B72-637F7472E16C&quot;)">View File</a>
+                                                                </span>
+                                                            </td>
+					</tr><tr>
+						<td style="width:40px;">
+                                                                <span id="FormsPH_gvProof_lblNo_1" title="Sr.No/Select" style="font-size: 12px;">2</span>
+                                                                
+                                                            </td><td>
+                                                                <span id="FormsPH_gvProof_lblProofName_1" style="font-size: 13px; padding-left: 5px;">B.E. Certificate</span>
+                                                            </td><td style="width:200px;">
+                                                                <center>
+                                                                    <span id="FormsPH_gvProof_lblProofNumber_1">RD2038815097122</span>
+                                                                </center>
+                                                            </td><td style="width:150px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkEditDoc_1" class="my_pinkBtn" href="javascript:__doPostBack(&#39;ctl00$FormsPH$gvProof$ctl03$lnkEditDoc&#39;,&#39;&#39;)">Edit</a>
+                                                                    
+                                                                    
+                                                                    
+                                                                </span>
+                                                            </td><td style="width:120px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkDoc_1" class="my_blueBtn" href="javascript:NavigatePublicFileNewee(&quot;929C6E8A-0C4E-4C3F-8BCF-08A03F5998BD&quot;)">View File</a>
+                                                                </span>
+                                                            </td>
+					</tr><tr>
+						<td style="width:40px;">
+                                                                <span id="FormsPH_gvProof_lblNo_2" title="Sr.No/Select" style="font-size: 12px;">3</span>
+                                                                
+                                                            </td><td>
+                                                                <span id="FormsPH_gvProof_lblProofName_2" style="font-size: 13px; padding-left: 5px;">SSLC/10th Certificate</span>
+                                                            </td><td style="width:200px;">
+                                                                <center>
+                                                                    <span id="FormsPH_gvProof_lblProofNumber_2">RD2038815097122</span>
+                                                                </center>
+                                                            </td><td style="width:150px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkEditDoc_2" class="my_pinkBtn" href="javascript:__doPostBack(&#39;ctl00$FormsPH$gvProof$ctl04$lnkEditDoc&#39;,&#39;&#39;)">Edit</a>
+                                                                    
+                                                                    
+                                                                    
+                                                                </span>
+                                                            </td><td style="width:120px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkDoc_2" class="my_blueBtn" href="javascript:NavigatePublicFileNewee(&quot;4FF05C9D-20E6-4A2E-9AD9-D8443F111206&quot;)">View File</a>
+                                                                </span>
+                                                            </td>
+					</tr><tr>
+						<td style="width:40px;">
+                                                                <span id="FormsPH_gvProof_lblNo_3" title="Sr.No/Select" style="font-size: 12px;">4</span>
+                                                                
+                                                            </td><td>
+                                                                <span id="FormsPH_gvProof_lblProofName_3" style="font-size: 13px; padding-left: 5px;">Caste Certificate</span>
+                                                            </td><td style="width:200px;">
+                                                                <center>
+                                                                    <span id="FormsPH_gvProof_lblProofNumber_3">RD2038815097122</span>
+                                                                </center>
+                                                            </td><td style="width:150px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkEditDoc_3" class="my_pinkBtn" href="javascript:__doPostBack(&#39;ctl00$FormsPH$gvProof$ctl05$lnkEditDoc&#39;,&#39;&#39;)">Edit</a>
+                                                                    
+                                                                    
+                                                                    
+                                                                </span>
+                                                            </td><td style="width:120px;">
+                                                                <span>
+                                                                    <a id="FormsPH_gvProof_lnkDoc_3" class="my_blueBtn" href="javascript:NavigatePublicFileNewee(&quot;94424403-B498-4FC2-B2DA-4079E5FBA7B5&quot;)">View File</a>
+                                                                </span>
+                                                            </td>
+					</tr>
+				</tbody></table>
+			</div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+                    
+<style type="text/css">
+    .style1 {
+        width: 4px;
+    }
+
+    .auto-style1 {
+        width: 618px;
+    }
+
+    .prsnl_dtl {
+        width: 100%;
+    }
+
+        .prsnl_dtl > tbody > tr > td, .prsnl_dtl > tbody > tr > th, .prsnl_dtl > tfoot > tr > td, .prsnl_dtl > tfoot > tr > th, .prsnl_dtl > thead > tr > td, .prsnl_dtl > thead > tr > th {
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: top;
+            border-top: 1px solid #ddd;
+        }
+
+    .auto-style2 {
+        width: 3px;
+    }
+</style>
+
+
+
+
+
+                </div>
+                <div class="SectionTable">
+                    
+<div style="height: 5px;">
+</div>
+<div>
+    
+</div>
+
+                </div>
+                <div class="SectionTable">
+                    
+<div style="height: 5px;">
+</div>
+<div id="">
+    
+</div>
+<div style="height: 5px;">
+</div>
+
+                </div>
+            </div>
+        
+</div>
+    
+
+                    </div>
+                
+                <div id="bottom">
+                    
+
+
+
+<div class="footerBlock">
+    <div class="footerCont">
+        
+    </div>
+</div>
+
+                </div>
+            
+        
+        <div id="UpdRandomToken">
+	
+                <div style="display: none">
+                    <input type="hidden" name="ctl00$HdnRandomToken" id="HdnRandomToken">
+                </div>
+            
+</div>
+        <script src="/stylesheets/common.js.download" type="text/javascript"></script>
+    
+<script type="text/javascript" src="/stylesheets/MaskedEditFix.js.download"></script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+
+
+   </div>
+   <div class="rounded_footer">
+    <div class="left_footer">
+    </div>
+    <div class="right_footer">
+    </div>
+</div>
+
+
+</div>
+
+    
+
+
+</body></html>

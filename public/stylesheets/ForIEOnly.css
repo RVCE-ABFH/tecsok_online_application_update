@@ -1,0 +1,63 @@
+body {
+}
+ header, section, footer, aside, nav, main, article, figure {
+     display: block;
+}
+ footer{
+     clear:both;
+}
+ /*.container {
+     display:table;
+     width: 100%;
+}
+ .row {
+     height: 100%;
+     display: table-row;
+}
+ .col-sm-4 {
+     display: table-cell;
+}*/
+ .logo_txt{
+     font-size:36px;
+}
+ .maincontent_txt, .slider_bg, .bottom_bg{
+     display:block;
+     clear:both;
+}
+ .maincontent_txt{
+     background-color:#fff;
+}
+ .mticker-news{
+     width:75%;
+     margin:0 auto;
+}
+ .modern-ticker ul li a{
+     position:inherit;
+     color:#fff;
+}
+ p .copyright{
+     color:#A1D8F2;
+}
+
+ .RFS LEGEND{
+    width:100.1%;
+     border-top-left-radius:10px;
+     border-top-right-radius:10px;
+}
+ .myprofile li h2{
+     font-size:16px;
+}
+ .myprofile li i{
+     display:inline-block;
+}
+ .green_btn{
+     background-color:#ff8000;
+}
+
+ /*.paneMid{
+    background: #50ceff;
+}*/
+ .paneLeft,.paneRight{
+     background:none;
+}
+ 
