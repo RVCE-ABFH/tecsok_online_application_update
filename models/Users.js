@@ -20,9 +20,19 @@ const UserSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+ verify_id:{
+  type:Number,
+  default:-1
+  
+ },
+  verify:{
+    type:Boolean,
+    default:false
   }
 });
 
 const User = mongoose.model('User', UserSchema);
 
 module.exports = User;
+

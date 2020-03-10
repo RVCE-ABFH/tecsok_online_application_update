@@ -34,6 +34,7 @@ abbr[title] {
 }
 b, strong {
     font-weight: 700;
+    font-size:19px;
 }
 dfn {
     font-style: italic;
@@ -748,6 +749,7 @@ h2, h3 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 :after, :before {
     -webkit-box-sizing: border-box;

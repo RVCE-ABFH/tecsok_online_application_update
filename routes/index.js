@@ -5,6 +5,19 @@ const User = require('../models/Users');
 // Welcome Page
 app.get('/home', forwardAuthenticated, (req, res) => res.render('home'));
 app.use(express.static(__dirname + '/public'));
+app.get("/:name/verify",function(req,res)
+{
+  
+  User.findOneAndUpdate({verify_id:req.query.id},{verify:true},function(err,user)
+  {
+    if(err)
+      console.log(err);
+    res.render("verified");
+  });
+
+
+});
+
 // Dashboard
 app.get('/:id/dashboard',ensureAuthenticated,function(req,res)
 {var x=req.params.id;
@@ -161,3 +174,4 @@ app.get('/:id/request',ensureAuthenticated,function(req,res)
 });
 
 module.exports = app;
+

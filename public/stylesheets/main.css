@@ -887,12 +887,12 @@ h1, h2, h3, h4 {
 
     .instr_box h3 {
         color: #fff;
-        font-family: "open_sansregular";
+       font-family: "open_sansregular";
         font-size: 15px;
         font-weight: normal;
         margin: 0;
         padding: 7px 0 7px 20px;
-        background: #045EA0;
+        background: #bd135b;
         border-radius: 5px 5px 0 0;
         text-transform: uppercase;
     }
@@ -1588,7 +1588,7 @@ input[type="submit"], input[type="button"], .btnurl {
     border-style: none;
     border-color: inherit;
     border-width: 0;
-    background: #045EA0;
+    background: #bd135b;
     color: #fff;
     cursor: pointer;
     font-size: 12px;

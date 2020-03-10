@@ -3,6 +3,7 @@ const app = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const bodyParser=require("body-parser");
+const verify= require('../config/verify');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 var name;
@@ -89,11 +90,13 @@ app.post('/register', (req, res) => {
           password2
         });
       } else {
+	      var ran= verify_email(email,username,req.hostname);
         const newUser = new User({
           username,
           email,
           number,
-          password
+          password,
+	  verify_id:ran
         });
 
         bcrypt.genSalt(10, (err, salt) => {
@@ -105,7 +108,7 @@ app.post('/register', (req, res) => {
               .then(user => {
                 req.flash(
                   'success_msg',
-                  'You are now registered and can log in'
+                  'You are now registered, Verify Your EMail ID by Clicking onto the verification link sent your registered Email'
                 );
                 res.redirect('/user/login');
               })
@@ -119,29 +122,44 @@ app.post('/register', (req, res) => {
 
 // Login
 app.post('/login', (req, res, next) => {
+  let errors=[];
   User.findOne({email:req.body.email}).then(user=>
-    {
-      if(user)
-      {
-        passport.authenticate('local', {
-          successRedirect: '/'+user.username+'/dashboard',
-          failureRedirect: '/user/login',
-          failureFlash: true
-        })(req, res, next);
-      }
-      else
-      {
-        passport.authenticate('local', {
-          successRedirect: '/',
-          failureRedirect: '/user/login',
-          failureFlash: true
-        })(req, res, next);
-        
-      }
+    { 
+    
+        if(user)
+        {
+         if(user.verify)
+         {
+          passport.authenticate('local', {
+            successRedirect: '/'+user.username+'/dashboard',
+            failureRedirect: '/user/login',
+            failureFlash: true
+          })(req, res, next);
+         }
+         else{
+          errors.push({ msg: 'Email is not Verified' });
+          res.render('login', {errors});
+
+         }
+        }
+        else
+        {
+          passport.authenticate('local', {
+            successRedirect: '/',
+            failureRedirect: '/user/login',
+            failureFlash: true
+          })(req, res, next);
+          
+        }
+      
+     
+     
       
     });
-
+    
+    
 });
+   
    
 
 
