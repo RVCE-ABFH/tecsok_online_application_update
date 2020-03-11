@@ -165,14 +165,15 @@ app.post('/login', async(req, res, next) => {
   
   const verifyURL = `https://google.com/recaptcha/api/siteverify?${query}`;
   const body = await fetch(verifyURL).then(res => res.json());
-  // if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === "" || req.body['g-recaptcha-response'] === null && !(email === undefined) || !(email=== "") || !(email=== null) &&  !(password === undefined) || !(password=== "") || !(password=== null) )
-  // {   errors.push({ msg: 'Please verify the captcha' });
-  // }
-  if(!body.success)
-  {
-    errors.push("Recaptcha Failed, Reload Page");
-    res.render("login",{errors});
+  if((email == undefined) || (email=="") || (email== null) &&  (password == undefined) || (password== "") || (password== null) )
+{ errors.push({ msg: 'Missing Credentials' });
+
+}
+  if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === "" || req.body['g-recaptcha-response'] === null && !body.success) 
+  {   errors.push({ msg: 'Please verify the captcha' });
+  res.render("login",{errors});
   }
+  
   else{
     
   User.findOne({email:req.body.email}).then(user=>
