@@ -2,6 +2,8 @@ const express = require('express');
 const app = express.Router();
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 const User = require('../models/Users');
+
+app.use(express.json());
 // Welcome Page
 app.get('/home', forwardAuthenticated, (req, res) => res.render('home'));
 app.use(express.static(__dirname + '/public'));

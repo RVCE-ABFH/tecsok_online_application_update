@@ -64,5 +64,5 @@ app.use("/user",require("./routes/users"));
 
 app.listen(5000,function()
 {
-    console.log("server started at http://localhost:5001")
+    console.log("server started at http://localhost:5000")
 });
