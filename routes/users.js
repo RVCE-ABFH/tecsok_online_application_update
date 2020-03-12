@@ -84,61 +84,68 @@ console.log("success "+ body.success);
               password2
             });
           }
-        });
-        User.findOne({number:number}).then(user=>
+          else
           {
-            if (user) {
-              errors.push({ msg: 'Number is  already registered' });
-              res.render('registration', {
-                errors,
-                username,
-                email,
-                number,
-                password,
-                password2
+            User.findOne({number:number}).then(user=>
+              {
+                if (user) {
+                  errors.push({ msg: 'Number is  already registered' });
+                  res.render('registration', {
+                    errors,
+                    username,
+                    email,
+                    number,
+                    password,
+                    password2
+                  });
+                }
+                else{
+                  User.findOne({ email: email }).then(user => {
+                    if (user) {
+                      errors.push({ msg: 'Email already exists' });
+                      res.render('registration', {
+                        errors,
+                        username,
+                        email,
+                        number,
+                        password,
+                        password2
+                      });
+                    } else {
+                      var ran= verify_email(email,username,req.hostname);
+                      const newUser = new User({
+                        username,
+                        email,
+                        number,
+                        password,
+                        verify_id:ran
+                      });
+              
+                      bcrypt.genSalt(10, (err, salt) => {
+                        bcrypt.hash(newUser.password, salt, (err, hash) => {
+                          if (err) throw err;
+                          newUser.password = hash;
+                          newUser
+                            .save()
+                            .then(user => {
+                              req.flash(
+                                'success_msg',
+                                'You are now registered, Verify Your EMail ID by Clicking onto the verification link sent your registered Email'
+                              );
+                              res.redirect('/user/login');
+                            })
+                            .catch(err => console.log(err));
+                        });
+                      });
+                    }
+                  });
+                }
               });
-            }
-          });
+          }
+        });
+        
     
-      User.findOne({ email: email }).then(user => {
-        if (user) {
-          errors.push({ msg: 'Email already exists' });
-          res.render('registration', {
-            errors,
-            username,
-            email,
-            number,
-            password,
-            password2
-          });
-        } else {
-          var ran= verify_email(email,username,req.hostname);
-          const newUser = new User({
-            username,
-            email,
-            number,
-            password,
-      verify_id:ran
-          });
-  
-          bcrypt.genSalt(10, (err, salt) => {
-            bcrypt.hash(newUser.password, salt, (err, hash) => {
-              if (err) throw err;
-              newUser.password = hash;
-              newUser
-                .save()
-                .then(user => {
-                  req.flash(
-                    'success_msg',
-                    'You are now registered, Verify Your EMail ID by Clicking onto the verification link sent your registered Email'
-                  );
-                  res.redirect('/user/login');
-                })
-                .catch(err => console.log(err));
-            });
-          });
-        }
-      });
+    
     }
     
     }
@@ -162,18 +169,21 @@ app.post('/login', async(req, res, next) => {
     remoteip: req.connection.remoteAddress
   });
   
-  
+  if((email == undefined) || (email=="") || (email== null) || (password == undefined) || (password== "") || (password== null))
+  {
+    errors.push({msg:"Missing Credentials"});
+    res.render("login",{errors});
+  }
   const verifyURL = `https://google.com/recaptcha/api/siteverify?${query}`;
   const body = await fetch(verifyURL).then(res => res.json());
-  if((email == undefined) || (email=="") || (email== null) &&  (password == undefined) || (password== "") || (password== null) )
-{ errors.push({ msg: 'Missing Credentials' });
-
-}
-  if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === "" || req.body['g-recaptcha-response'] === null && !body.success) 
-  {   errors.push({ msg: 'Please verify the captcha' });
-  res.render("login",{errors});
+  if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === "" || req.body['g-recaptcha-response'] === null  )
+   {   errors.push({ msg: 'Please verify the captcha' });
   }
-  
+  if(!body.success)
+  {
+    errors.push({msg:"Recaptcha Failed, Reload Page"});
+    res.render("login",{errors});
+  }
   else{
     
   User.findOne({email:req.body.email}).then(user=>
