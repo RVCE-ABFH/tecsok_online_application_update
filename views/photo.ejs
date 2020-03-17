@@ -1,151 +1,486 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0022)http://localhost:8080/ -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>
-            Upload photo/Signature
-        </title>
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="/stylesheets/bootstrap.css">
-        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
-        <link id="ContrastStyleSheet" href="/stylesheets/Layout.css" rel="stylesheet" type="text/css">
-        <link id="CultureSheet" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
-        <link id="Link1" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
-        <link href="/stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css">
-        <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css">
-        
-        <link href="/stylesheets/PopStyles.css" rel="stylesheet" type="text/css">
-        <link href="/stylesheets/fileuploader.css" rel="stylesheet" type="text/css">
-        <link href="/stylesheets/vscroller.css" rel="stylesheet" type="text/css">
-        <link href="/stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css">
-        <link id="SiteLayoutSheet" href="/stylesheets/Layout1.css" rel="stylesheet" type="text/css">
-        <link id="Link2" href="/stylesheets/Site1.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-            /* The Modal (background) */
-            .mySessionModal-modal {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-    
-            /* Modal Content */
-            .mySessionModal-modal-content {
-                background-color: #fefefe;
-                margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 400px;
-            }
-    
-            /* The Close Button */
-            .mySessionModalclose {
-                color: #aaaaaa;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-    
-                .mySessionModalclose:hover, .mySessionModalclose:focus {
-                    color: #000;
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-        </style>
-        <script type="text/javascript">
-            function burstCache() {
-                if (!navigator.onLine) {
-                    document.body.innerHTML = 'Loading...';
-                }
-            }
-            window.history.forward();
-            function noBack() { window.history.forward(); }
-        </script>
-         <style type="text/css">
-            .style1 {
-                width: 4px;
-            }
-    
-            .auto-style1 {
-                width: 618px;
-            }
-    
-            .prsnl_dtl {
-                width: 100%;
-            }
-    
-                .prsnl_dtl > tbody > tr > td, .prsnl_dtl > tbody > tr > th, .prsnl_dtl > tfoot > tr > td, .prsnl_dtl > tfoot > tr > th, .prsnl_dtl > thead > tr > td, .prsnl_dtl > thead > tr > th {
-                    padding: 8px;
-                    line-height: 1px;
-                    vertical-align: top;
-                    border-top: 1px solid #ddd;
-                }
-    
-            .auto-style2 {
-                width: 3px;
-            }
-        </style>
-        
-    </head>
-    
- 
-    <body>
-        <div class="topdiv">
-            <div class="topbuton container">
-            </div>
-        </div>
-        <div class="top_banner">
-            <div class="container in_banner">
-                <div class=" logo col-md-3 col-sm-3 col-xs-12">
-                    <img id="" class="img-responsive" src="http://www.tecsok.com/wp-content/uploads/2018/02/tecsok-2.png" style="border-width:0px;">
-                   
-                </div>
-                <div class="banner_text col-md-6 col-sm-6 col-xs-12">
-                    <h2 class="text-center">
-                        <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
-                    </h2>
-                    <h4 class="text-center">
-                        <span id="">Online Application Portal </span>
-                    </h4>
-                </div>
-                <div class=" logo col-md-3 col-sm-3 col-xs-12">
-    
-              
-                    
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                   
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="">            
-                <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" id="">HELP</a></li>  
-                <li><a href="/user/logout" id="">LOGOUT</a></li> 
-                
+<!-- saved from url=(0057)https://www.kpscrecruitment.in/Profile/PhotoSignForm.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="FormsHead"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Upload Photo / Signature
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="ContrastStyleSheet" href="/stylesheets/Layout.css" rel="stylesheet" type="text/css">
+<link id="CultureSheet" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+<link id="Link1" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+<link id="ContrastStyleSheet" href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css"><link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"><link href="/stylesheets/PopStyles.css" rel="stylesheet" type="text/css"><link href="/stylesheets/fileuploader.css" rel="stylesheet" type="text/css"><link href="/stylesheets/vscroller.css" rel="stylesheet" type="text/css"><link href="/stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css"><link id="SiteLayoutSheet" href="/stylesheets/Layout1.css" rel="stylesheet" type="text/css"><link id="Link2" href="/stylesheets/Site1.css" rel="stylesheet" type="text/css">    <style type="text/css">
+        /* The Modal (background) */
+        .mySessionModal-modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
 
-                 </ul>
+        /* Modal Content */
+        .mySessionModal-modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 400px;
+        }
+
+        /* The Close Button */
+        .mySessionModalclose {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .mySessionModalclose:hover, .mySessionModalclose:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+    <script src="/javascript/CountDownSession.js" type="text/javascript"></script>
+    <script src="/javascript/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="/javascript/CommonValidations.js" type="text/javascript"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/stylesheets/ie10-viewport-bug-workaround.css" type="text/css" rel="stylesheet">
+    <script src="/javascript/ie-emulation-modes-warning.js" type="text/javascript"></script>
+    <link href="/stylesheets/ForIEOnly.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+         <script src="../../ForIEOnly/html5shiv.min.js" type="text/javascript"></script>
+      <script src="../../ForIEOnly/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        function burstCache() {
+            if (!navigator.onLine) {
+                document.body.innerHTML = 'Loading...';
+            }
+        }
+        window.history.forward();
+        function noBack() { window.history.forward(); }
+    </script>
+
     
-            </div>
-        </div>
-        </nav>
+    <link href="/stylesheets/Layout1.css" id="SiteLayoutSheet" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/Site1.css" id="Link1" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" language="javascript">
+        function RedirectPerDetail(LangID) {
+            if (LangID == 1) {
+                alert('Please Submit Personal Details.');
+            }
+            else {
+
+                alert('Please Submit Personal Details.');
+            }
+            location.href = "../../Profile/PersonalForm.aspx";
+        }
+        function RequiredField(LangID) {
+            if (LangID == 1) {
+                alert('* mark fields are mandatory.');
+            }
+            else {
+                alert('* mark fields are mandatory.');
+            }
+        }
+
+        function CloseDiv() {
+            $(".popUpDiv").hide();
+        }
+
+        function ConfirmNext() {
+            if (confirm("Details has been saved successfully.Do you want to proceed ?")) {
+                location.href = "DocumentsForm.aspx";
+            }
+            else {
+                return false;
+            }
+            return false;
+        }
+
+        function View() {
+
+            //alert('Your Profile has been created successfully.');         
+            //location.href = "ApplicationFormView.aspx";
+            var retVal = confirm("Do you want to view your OTR ?");
+            if (retVal == true) {
+                location.href = "ApplicationFormView.aspx";
+                return true;
+            }
+            else {
+                location.href = "PhotoSignForm.aspx";
+                return false;
+            }
+        }
+
+        function Validate(VGroup) {
+            var isvalid = true;
+            var i = 0;
+            for (i = 0; i < Page_Validators.length; i++) {
+                ValidatorValidate(Page_Validators[i], VGroup, null);
+                if (Page_Validators[i].isvalid == false)
+                    isvalid = false;
+
+            }
+            return isvalid;
+        }
+
+        function ValidateTab(obj) {
+            return true;
+        }
+         
+ 
+
+        function checkImageFileUpload() {
+            var ErrorMessage = '';
+            var _validFileExtensions = [".jpg", ".jpeg"];
+            var iChars = "!`@#$%^&*()+=-[]\\\';,./{}|\":<>?~_";
+
+            var fileUploadPhotoObj = document.getElementById("FormsPH_FileUpload1");
+            var sFileNamePhoto = fileUploadPhotoObj.value.split(/(\\|\/)/g).pop();
+            if (sFileNamePhoto.length > 0) {
+                var blnValidPhoto = false;
+                for (var j = 0; j < _validFileExtensions.length; j++) {
+                    var sCurExtension = _validFileExtensions[j];
+
+                    if (sFileNamePhoto.substr(sFileNamePhoto.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                        blnValidPhoto = true;
+                        break;
+                    }
+                }
+
+                if (!blnValidPhoto) {
+                    if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+                        ErrorMessage += '\nPlease upload Photo file having extensions .jpeg OR .jpg only.';
+                    }
+                    else {
+                        ErrorMessage += '\nPlease upload Photo file having extensions .jpeg OR .jpg only.';
+
+                    }
+                    fileUploadPhotoObj.value = '';
+                }
+                else {
+                    var blnValidspecialcharactersPhoto = false;
+                    var FileNamePhoto = sFileNamePhoto.substr(0, sFileNamePhoto.lastIndexOf('.'));
+                    for (var i = 0; i < FileNamePhoto.length; i++) {
+                        if (iChars.indexOf(FileNamePhoto.charAt(i)) != -1) {
+                            blnValidspecialcharactersPhoto = true;
+                            break;
+                        }
+                    }
+                    if (blnValidspecialcharactersPhoto) {
+                        if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+                            ErrorMessage += '\n Uploaded Photo file has special characters. \nThese are not allowed.';
+                        }
+                        else {
+                            ErrorMessage += "Uploaded Photo file has special characters. \nThese are not allowed.";
+                        }
+                        fileUploadPhotoObj.value = '';
+                    }
+                    else {
+
+                        if (typeof (fileUploadPhotoObj.files) != "undefined") {
+                            var sizePhoto = parseFloat(fileUploadPhotoObj.files[0].size / 1024).toFixed(2);
+                            if (sizePhoto <= 20 || sizePhoto > 50) {
+                                if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+                                    ErrorMessage += '\nuploaded Photo file Size should be between 20 KB and 50 KB.';
+                                }
+                                else {
+                                    ErrorMessage += '\nuploaded Photo file Size should be between 20 KB and 50 KB.';
+                                }
+                                fileUploadPhotoObj.value = '';
+                            }
+                        }
+                        else {
+                            alert("This browser does not support HTML5.");
+                        }
+                    }
+                }
+            }
+
+
+            //var objFileUploadSign = $("#FormsPH_FileUpload2").val();
+
+            //if (objFileUploadSign.length == 0 && $('#FormsPH_txtSignId').val().length == 0) {
+
+            //    if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+            //        ErrorMessage += '\nहस्ताक्षर अपलोड करें';
+            //    }
+            //    else {
+            //        ErrorMessage += '\nPlease Upload Signature';
+            //    }
+            //}
+            //else {
+
+            var fileUploadSignObj = document.getElementById("FormsPH_FileUpload2");
+            var sFileNameSign = fileUploadSignObj.value.split(/(\\|\/)/g).pop();
+            if (sFileNameSign.length > 0) {
+                var blnValidSign = false;
+                for (var j = 0; j < _validFileExtensions.length; j++) {
+                    var sCurExtension = _validFileExtensions[j];
+
+                    if (sFileNameSign.substr(sFileNameSign.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                        blnValidSign = true;
+                        break;
+                    }
+                }
+
+                if (!blnValidSign) {
+                    if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+                        ErrorMessage += '\nPlease upload Signature file having extensions .jpeg OR .jpg only.';
+                    }
+                    else {
+                        ErrorMessage += '\nPlease upload Signature file having extensions .jpeg OR .jpg only.';
+
+                    }
+                    fileUploadSignObj.value = '';
+                }
+                else {
+                    var blnValidspecialcharactersSign = false;
+                    var FileNameSign = sFileNameSign.substr(0, sFileNameSign.lastIndexOf('.'));
+                    for (var i = 0; i < FileNameSign.length; i++) {
+                        if (iChars.indexOf(FileNameSign.charAt(i)) != -1) {
+                            blnValidspecialcharactersSign = true;
+                            break;
+                        }
+                    }
+                    if (blnValidspecialcharactersSign) {
+                        if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+                            ErrorMessage += '\nUploaded Signature file has special characters. \nThese are not allowed.';
+                        }
+                        else {
+                            ErrorMessage += "Uploaded Signature file has special characters. \nThese are not allowed.";
+                        }
+                        fileUploadSignObj.value = '';
+                    }
+                    else {
+
+                        if (typeof (fileUploadSignObj.files) != "undefined") {
+                            var sizeSign = parseFloat(fileUploadSignObj.files[0].size / 1024).toFixed(2);
+                            if (sizeSign <= 3 || sizeSign > 50) {
+                                if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+                                    ErrorMessage += '\nuploaded Signature file Size should be between 3 KB and 50 KB.';
+                                }
+                                else {
+                                    ErrorMessage += '\nuploaded Signature file Size should be between 3 KB and 50 KB.';
+                                }
+                                fileUploadSignObj.value = '';
+                            }
+                        }
+                        else {
+                            alert("This browser does not support HTML5.");
+                        }
+                    }
+                }
+            }
+
+
+            //var objFileUploadThumb = $("#FormsPH_FileUpload3").val();
+
+            //if (objFileUploadThumb.length == 0 && $('#FormsPH_txtThumbId').val().length == 0) {
+
+            //    if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+            //        ErrorMessage += '\nअंगूठे का निशान अपलोड करें';
+            //    }
+            //    else {
+            //        ErrorMessage += '\nPlease Upload Thumb Impression';
+            //    }
+            //}
+            //else {
+
+            //var fileUploadThumbObj = document.getElementById("FormsPH_FileUpload3");
+            //var sFileNameThumb = fileUploadThumbObj.value.split(/(\\|\/)/g).pop();
+            //if (sFileNameThumb.length > 0) {
+            //    var blnValidThumb = false;
+            //    for (var j = 0; j < _validFileExtensions.length; j++) {
+            //        var sCurExtension = _validFileExtensions[j];
+
+            //        if (sFileNameThumb.substr(sFileNameThumb.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+            //            blnValidThumb = true;
+            //            break;
+            //        }
+            //    }
+
+            //    if (!blnValidThumb) {
+            //        if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+            //            ErrorMessage += '\nPlease upload Thumb Impression file having extensions .jpeg OR .jpg only.';
+            //        }
+            //        else {
+            //            ErrorMessage += '\nPlease upload Thumb Impression file having extensions .jpeg OR .jpg only.';
+
+            //        }
+            //        fileUploadThumbObj.value = '';
+            //    }
+            //    else {
+            //        var blnValidspecialcharactersThumb = false;
+            //        var FileNameThumb = sFileNameThumb.substr(0, sFileNameThumb.lastIndexOf('.'));
+            //        for (var i = 0; i < FileNameThumb.length; i++) {
+            //            if (iChars.indexOf(FileNameThumb.charAt(i)) != -1) {
+            //                blnValidspecialcharactersThumb = true;
+            //                break;
+            //            }
+            //        }
+            //        if (blnValidspecialcharactersThumb) {
+            //            if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+            //                ErrorMessage += '\nUploaded Thumb Impression file has special characters. \nThese are not allowed.';
+            //            }
+            //            else {
+            //                ErrorMessage += "Uploaded Thumb Impression file has special characters. \nThese are not allowed.";
+            //            }
+            //            fileUploadThumbObj.value = '';
+            //        }
+            //        else {
+
+            //            if (typeof (fileUploadThumbObj.files) != "undefined") {
+            //                var sizeThumb = parseFloat(fileUploadThumbObj.files[0].size / 1024).toFixed(2);
+            //                if (sizeThumb <= 3 || sizeThumb > 50) {
+            //                    if ($("#FormHeader_SetCulture1_btn_Language").text() == 'English') {
+            //                        ErrorMessage += '\nuploaded Thumb Impression file Size should be between 3 KB and 50 KB.';
+            //                    }
+            //                    else {
+            //                        ErrorMessage += '\nuploaded Thumb Impression file Size should be between 3 KB and 50 KB.';
+            //                    }
+            //                    fileUploadThumbObj.value = '';
+            //                }
+            //            }
+            //            else {
+            //                alert("This browser does not support HTML5.");
+            //            }
+            //        }
+            //    }
+            //}
+
+
+            if (ErrorMessage.length > 0) {
+                alert(ErrorMessage);
+                return false;
+            }
+        }
+
+
+
+
+        function validateTabs(tabIdx) {
+            ret = true;
+            switch (tabIdx) {
+                case 0:
+                    if (document.getElementById('FormsPH_hdnPersonal').value != '') {
+                        document.getElementById('FormsPH_hdnWizardActiveStep').value = 1;
+                        ret = true;
+                    }
+                    else {
+                        alert('kindly fill mandatory details.');
+                        ret = false;
+                    }
+                    break;
+                case 1:
+                    if (document.getElementById('FormsPH_hdnAddress').value != '') {
+                        document.getElementById('FormsPH_hdnWizardActiveStep').value = 2;
+                        ret = true;
+                    }
+                    else {
+                        alert('kindly fill mandatory details.');
+                        ret = false;
+                    }
+                    //ret = confirm("You wanna continue?");
+                    break;
+                case 2:
+                    if (document.getElementById('FormsPH_hdnOtherDetails').value != '') {
+                        document.getElementById('FormsPH_hdnWizardActiveStep').value = 3;
+                        ret = true;
+                    }
+                    else {
+                        alert('kindly fill mandatory details.');
+                        ret = false;
+                    }
+                    break;
+                case 3:
+                    if (document.getElementById('FormsPH_hdnQualDetails').value != '') {
+                        document.getElementById('FormsPH_hdnWizardActiveStep').value = 4;
+                        ret = true;
+                    }
+                    else {
+                        alert('kindly fill mandatory details.');
+                        ret = false;
+                    }
+                    break;
+                case 4:
+                    if (document.getElementById('FormsPH_hdnExperDetails').value != '') {
+                        document.getElementById('FormsPH_hdnWizardActiveStep').value = 5;
+                        ret = true;
+                    }
+                    else {
+                        alert('kindly fill mandatory details.');
+                        ret = false;
+                    }
+                    break;
+                case 5:
+                    if (document.getElementById('FormsPH_HdnSaveImage').value != '') {
+                        document.getElementById('FormsPH_hdnWizardActiveStep').value = 6;
+                        ret = true;
+                    }
+                    else {
+                        alert('kindly fill mandatory details.');
+                        ret = false;
+                    }
+                    break;
+                default:
+                    ret = true;
+                    break;
+            }
+            return ret;
+        }
+    </script>
+
+</head>
+<body onload="burstCache();  " onpageshow="if (event.persisted) noBack();">
+
+    <form method="post" action="https://www.kpscrecruitment.in/Profile/PhotoSignForm.aspx" id="FormsForm" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['FormsForm'];
+if (!theForm) {
+    theForm = document.FormsForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/javascript/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="/javascript/ScriptResource.axd" type="text/javascript"></script>
+<script src="/javascript/ScriptResource(1).axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D38F21F4">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+</div>
         <div id="divnew" class="medium">
             <div id="main">
                 <div id="header">
@@ -189,12 +524,56 @@
          50% { opacity: 0; }
          }
 </style>
+<div class="topdiv">
+    <div class="topbuton container">
+    </div>
+</div>
+<div class="top_banner">
+    <div class="container in_banner">
+        <div class=" logo col-md-3 col-sm-3 col-xs-12">
+            <img id="" class="img-responsive" src="http://www.tecsok.com/wp-content/uploads/2018/02/tecsok-2.png" style="border-width:0px;">
+           
+        </div>
+        <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+            <h2 class="text-center">
+                <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
+            </h2>
+            <h4 class="text-center">
+                <span id="">Online Application Portal </span>
+            </h4>
+        </div>
+        <div class=" logo col-md-3 col-sm-3 col-xs-12">
 
+      
+            
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="">            
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" id="">HELP</a></li>  
+        <li><a href="/user/logout" id="">LOGOUT</a></li> 
+        
 
+         </ul>
 
-
-
-                </div>
+    </div>
+</div>
+</nav>
                 <div class="container-fluid" id="main-content">
                     <div id="dvLeftMenu">
                         <div>
@@ -221,33 +600,124 @@
                                         
                                         
                                     </ul>
-                                </div>
-                                <!-- /.sidebar-collapse -->
+                                </div>    
                             </div>
                         </div>
                     </div>
                     <div id="page-wrapper">
                         <script type="text/javascript">
 //<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'FormsForm', ['tctl00$UpdRandomToken','UpdRandomToken'], [], [], 90, 'ctl00');
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'FormsForm', ['tctl00$FormsPH$UPPersnDet','FormsPH_UPPersnDet','tctl00$FormsPH$UpdatePanel1','FormsPH_UpdatePanel1','tctl00$UpdRandomToken','UpdRandomToken'], [], ['ctl00$FormsPH$btnSavePersonelDet','FormsPH_btnSavePersonelDet'], 90, 'ctl00');
 //]]>
 </script>
 
                         
-    <div id="divToPrint">
-        <div id="" style="">
-	
-            <div>
-                <div class="">
-                    <!-- <p>write from here</p> -->
-                    <table>
-    <tbody><br><br>
+    <script type="text/javascript" language="javascript">
+        function EncryptAadharNo() {
+            if (!Page_ClientValidate("SAVEPerDet")) {
+                return false;
+            }
+        }
+    </script>
+    <table id="FormsPH_tblMain" width="100%">
+	<tbody><tr>
+		<td>
+                
+
+<script type="text/javascript">
+
+    $(function () {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+      
+        // passes on every "a" tag 
+        $("#cssmenu a").each(function () {
+           
+            // checks if its the same on the address bar
+            if (url.indexOf($(this).attr('navigateurl')) > 0) {
+                
+                if ($(this).closest("li").hasClass("Complete")) {
+                    $(this).closest("li").removeClass("Complete");
+                    $(this).closest("li").addClass("CompleteActive");
+                }
+
+                if ($(this).closest("li").hasClass("InComplete")) {
+                    $(this).closest("li").removeClass("InComplete");
+                    $(this).closest("li").addClass("InCompleteActive");
+                }
+            }
+
+        });
+
+
+    });
+
+
+    function SelectProfileTab(ProfileTabID) {
+
+        var varUnsavedChanges = document.getElementById('FormsPH_uxProfileMenu_hdnUnsavedChanges').value;
+
+        if (varUnsavedChanges == 'Unsaved') {
+            if (confirm('It looks like you have been editing something. \nIf you leave before saving, your changes will be lost.')) {
+                SetProfileTab(ProfileTabID);
+            }
+        }
+        else {
+            SetProfileTab(ProfileTabID);
+        }
+    }
+
+    function SetProfileTab(TabID) {
+
+        if (TabID == 'PersonalForm') {
+            location.href = 'PersonalForm.aspx';
+        }
+        if (TabID == 'AddressForm') {
+            location.href = 'AddressForm.aspx';
+        }
+        if (TabID == 'OtherInfoForm') {
+            location.href = 'OtherInfoForm.aspx';
+        }
+        if (TabID == 'QualificationForm') {
+            location.href = 'QualificationForm.aspx';
+        }
+        if (TabID == 'ExperienceForm') {
+            location.href = 'ExperienceForm.aspx';
+        }
+        if (TabID == 'PhotoSignForm') {
+            location.href = 'PhotoSignForm.aspx';
+        }
+        if (TabID == 'DocumentsForm') {
+            location.href = 'DocumentsForm.aspx';
+        }
+    }
+</script>
+<table>
+    <tbody><tr>
+        <td>
+            <span id="FormsPH_uxProfileMenu_lblMarks" style="color:Red;font-size:Medium;"> '' * '' marks are mandatory</span>
+        </td>
+        <td>
+            <span id="FormsPH_uxProfileMenu_lblNote" style="color:Red;">If no response found on Save/Add Button, kindly Refresh page (press CTRL + F5) <br>
+''Click on Save button to save the information before going to next Step''</span>
+        </td>
+        <td>
+            <span id="FormsPH_uxProfileMenu_lblProfileStatus" style="color:Red;font-size:Medium;font-weight:bold;color:Red;">Profile Status : InComplete</span>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <span id="FormsPH_uxProfileMenu_Label1" style="color:Red;font-weight:bold;">These 7 Steps Are Only OTR, Not Application Form. Kindly Go To The Online Application Menu For Apply&nbsp;Notification.</span>
+        </td>
+        <td></td>
+    </tr>
     <tr>
         <td colspan="3">
             <div>
             </div>
             <div id="cssmenu">
-                <ul>                           
+                <ul>
                     <li id="FormsPH_uxProfileMenu_ProfileStep1" class="Complete"><a href="/<%=user.username%>/profile"  >
                         <span id="FormsPH_uxProfileMenu_stp1">&nbsp;&nbsp;Step1 :&nbsp;&nbsp;</span><br>
                         <span id="FormsPH_uxProfileMenu_Lstp1">&nbsp;&nbsp;Personal Details&nbsp&nbsp;&nbsp;</span>
@@ -287,15 +757,22 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'Form
         </td>
     </tr>
 </tbody></table>
-                      <div id="FormsPH_UPImahe">
-            
+
+            </td>
+	</tr>
+	<tr>
+		<td valign="top">
+                <div>
+                    <div>
+                        <div id="FormsPH_UPImahe">
+			
                                 <fieldset class="RFS">
                                     <legend id="FormsPH_UploadPhotoSign" class="RFSL">Photo And Signature Upload</legend>
                                     <table width="100%" class="t_default">
                                         <tbody><tr>
                                             <td width="130px">
                                                 <span id="FormsPH_lblPhoto">Photo</span><br>
-                                                <img id="FormsPH_ImgPhoto" alt="Photo" src="#" style="height: 140px; width: 130px">
+                                                <img id="FormsPH_ImgPhoto" alt="Photo" src="data:image/jpg;base64," style="height: 140px; width: 130px">
                                             </td>
                                             <td valign="top">
                                                 <table width="100%">
@@ -322,17 +799,17 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'Form
                                                                     </td>
                                                                 </tr>
                                                                 <tr style="display: none">
-                <td colspan="2">
+				<td colspan="2">
                                                                         <span id="FormsPH_lblInstructionsPhoto1" style="color:Red;">Image Height uploaded  should not exeed 4.5cms.</span>
                                                                     </td>
-            </tr>
-            
+			</tr>
+			
                                                                 <tr style="display: none">
-                <td colspan="2">
+				<td colspan="2">
                                                                         <span id="FormsPH_lblInstructionsPhoto2" style="color:Red;">Image Width uploaded  should not exeed 3.5cms.</span>
                                                                     </td>
-            </tr>
-            
+			</tr>
+			
                                                             </tbody></table>
                                                         </td>
                                                     </tr>
@@ -342,7 +819,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'Form
                                         <tr>
                                             <td width="130px">
                                                 <span id="FormsPH_lblSign">Signature</span><br>
-                                                <img id="FormsPH_ImgSign" alt="Sign" src="">
+                                                <img id="FormsPH_ImgSign" alt="Sign" src="data:image/jpg;base64," style="height: 60px; width: 130px">
                                             </td>
                                             <td valign="top">
                                                 <table width="100%">
@@ -373,83 +850,52 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'Form
                                  
                                 </fieldset>
                             
-        </div>
+		</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+              
+                <div id="FormsPH_UpdateProgress6" style="display:none;" role="status" aria-hidden="true">
+			
+                        <div class="popUpDiv">
+                            <div class="popUpBG">
+                            </div>
+                            <div class="popUpImage">
+                                <img src="./Upload Photo _ Signature_files/pleaseWait.gif" alt="Please Wait!">
+                            </div>
+                        </div>
                     
-<style type="text/css">
-    .style1 {
-        width: 4px;
-    }
+		</div>
+            </td>
+	</tr>
+</tbody></table>
 
-    .auto-style1 {
-        width: 618px;
-    }
-
-    .prsnl_dtl {
-        width: 100%;
-    }
-
-        .prsnl_dtl > tbody > tr > td, .prsnl_dtl > tbody > tr > th, .prsnl_dtl > tfoot > tr > td, .prsnl_dtl > tfoot > tr > th, .prsnl_dtl > thead > tr > td, .prsnl_dtl > thead > tr > th {
-            padding: 8px;
-            line-height: 1.42857143;
-            vertical-align: top;
-            border-top: 1px solid #ddd;
-        }
-
-    .auto-style2 {
-        width: 3px;
-    }
-</style>
-
-
-
-
-
-                </div>
-                <div class="SectionTable">
-                    
-<div style="height: 5px;">
-</div>
-<div>
-    
-</div>
-
-                </div>
-                <div class="SectionTable">
-                    
-<div style="height: 5px;">
-</div>
-<div id="">
-    
-</div>
-<div style="height: 5px;">
-</div>
-
-                </div>
-            </div>
-        
-</div>
-    
+     
 
                     </div>
-                
+                </div>
                 <div id="bottom">
                     
 
 
-
-<div class="footerBlock">
-    <div class="footerCont">
-        
-    </div>
-</div>
+                    <div class="rounded_footer">
+                        <div class="left_footer">
+                        </div>
+                        <div class="right_footer">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="cleaner">
+                    </div>
+                    <div id="footer">
+                    <div class="container-fluid">
+                        <p>
+                            <span id="ctl00_lblDisclaimer"></span><span id="ctl00_lblVersion"> </span></p>
+                    </div>
+                    </div>
 
                 </div>
-            
-        
+            </div>
+        </div>
         <div id="UpdRandomToken">
 	
                 <div style="display: none">
@@ -457,32 +903,58 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'Form
                 </div>
             
 </div>
-        <script src="/stylesheets/common.js.download" type="text/javascript"></script>
+        <script src="/javascript/common.js" type="text/javascript"></script>
     
-<script type="text/javascript" src="/stylesheets/MaskedEditFix.js.download"></script>
+<script type="text/javascript" src="/javascript/MaskedEditFix.js"></script>
 <script type="text/javascript">
 //<![CDATA[
-(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"FormsPH_UPImahe","displayAfter":500,"dynamicLayout":true}, null, null, $get("FormsPH_UpdateProgress6"));
+});
+//]]>
 </script>
+</form>
 
-
-   
-<div class="rounded_footer">
-    <div class="left_footer">
+    <div id="mySessionModal" class="mySessionModal-modal">
+        <!-- Modal content -->
+        <div class="mySessionModal-modal-content">
+            <span class="mySessionModalclose">×</span>
+            <h3>Session Expiring! </h3>
+            <p>
+                Your Session will expire in&nbsp;<span id="mySessionModaSeconds"></span>&nbsp;seconds.<br>
+            </p>
+        </div>
     </div>
-    <div class="right_footer">
-    </div>
-</div>
 
-<div class="cleaner">
-</div>
-<div id="footer">
-<div class="container-fluid">
-    <p>
-        <span id="ctl00_lblDisclaimer"></span><span id="ctl00_lblVersion"> </span></p>
-</div>
-</div>
-    
+    <form id="pmt" method="post" action="https://www.kpscrecruitment.in/RPS/Forms/MakePayment.aspx">
+        <input type="hidden" id="TRNID" name="NTRNID" value="">
+        <input type="hidden" id="SRVID" name="NSRVID" value="">
+        <input type="hidden" id="AMT" name="NAMT" value="">
+        <input type="hidden" id="Email" name="NEmail" value="">
+        <input type="hidden" id="Mobile" name="NMobile" value="">
+        <input type="hidden" id="RetUrl" name="NRetUrl" value="">
+        <input type="hidden" id="ServiceName" name="NServiceName" value="">
+        <input type="hidden" id="ADVNo" name="NADVNo" value="">
+        <input type="submit" id="SPMT" name="NPMT" value="MKPMT" style="visibility: hidden;">
+        <input type="hidden" id="CreatedBy" name="NCreatedBy" value="">
+        <input type="hidden" id="Name" name="NName" value="">
+    </form>
+    <script type="text/javascript">
+
+        var span = document.getElementsByClassName("mySessionModalclose")[0].onclick = function () {
+            document.getElementById('mySessionModal').style.display = "none";
+        }
+
+        var sessionTimeout = "20";
+        var MINUTES = parseInt(sessionTimeout);
+        var SECONDS = 60;
+        var MILLISECONDS = 1000;
+        var timeInMinutes = 10;
+        var currentTime = Date.parse(new Date());
+        var deadline = new Date(currentTime + MINUTES * SECONDS * MILLISECONDS);
+        initializeClock('clockdiv', deadline);
+
+    </script>
 
 
 </body></html>
