@@ -596,7 +596,26 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'Form
                                 </td><td class="padding" align="center" valign="middle">
                                     <span id="FormsPH_GVDetails_lblRemark_0"></span>
                                 </td><td class="padding" align="center" valign="middle" style="width:6%;">
-                                    <a id="FormsPH_GVDetails_lnkPayNow_0" href="/payment" style="color:Green;">Pay Now</a>
+                                    <form action="/<%=user.username%>/charge" method="POST">
+                                        <script
+                                            src="https://checkout.stripe.com/checkout.js"
+                                            class="stripe-button"
+                                            data-key="pk_test_lMk49j0Dgdyn4IIIIxnvmMYB00Ygt1SU75"
+                                            data-amount="100"
+                                            data-name="Jobapp"
+                                            data-description="Your paying for Tecsok Jobapp"
+                                            data-image="/img/marketplace.png"
+                                            data-locale="auto"
+                                            data-currency="inr"
+                                        >
+                                        // details should be updated from database
+                                        </script>
+                                        <script>
+                                            // Hide default stripe button
+                                            document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                                          </script>
+                                          <button type="submit" class="btn-success btn-xs">Pay Now</button>
+                                        </form>
                                 </td>
                                  <!-- <td style="width:16%;"> 
                                     <a id="FormsPH_GVDetails_lnkPostpreferences_0" class="blink" href="javascript:__doPostBack('ctl00$FormsPH$GVDetails$ctl02$lnkPostpreferences','')" style="color:#F82337;font-weight:bold;"></a>

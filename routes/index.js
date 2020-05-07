@@ -1,14 +1,6 @@
 const express = require('express');
 const app = express.Router();
-const https = require('https');
-const qs = require('querystring');
-const checksum_lib = require('../models/checksum');
-const port=5000;
-var PaytmConfig = {
-	mid: "BACSyb72631279595265",
-	key: "WU1xdWF6nvqFCFTQ",
-	website: "WEBSTAGING"
-}
+var stripe=require('stripe')("sk_test_ktXMkRvDqCeyRCrpbrfKj6qo00V3EYW2gG");
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 const User = require('../models/Users');
 
@@ -198,6 +190,49 @@ app.get('/:id/application',ensureAuthenticated,function(req,res)
 
 
 });
+app.post('/:id/charge',ensureAuthenticated,function(req,res)
+{var x=req.params.id;
+  User.findOne({username:x},function(err,user)
+  {
+    if(err)
+      console.log(err);
+    else
+     {
+      const amount = 100;
+  
+      stripe.customers.create({
+        email: req.body.stripeEmail,
+        source: req.body.stripeToken
+      })
+      .then(customer => stripe.charges.create({
+        amount,
+        description: 'TECSOK JOB APP',
+        currency: 'inr',
+        customer: customer.id
+      }))
+      .then(charge =>  res.render("application",{user:user}))
+     }
+
+  });
+
+
+});
+// app.post('/charge', (req, res) => {
+//   const amount = 100;
+  
+//   stripe.customers.create({
+//     email: req.body.stripeEmail,
+//     source: req.body.stripeToken
+//   })
+//   .then(customer => stripe.charges.create({
+//     amount,
+//     description: 'TECSOK JOB APP',
+//     currency: 'inr',
+//     customer: customer.id
+//   }))
+//   .then(charge => res.render(''));
+// });
+
 
 app.get('/:id/request',ensureAuthenticated,function(req,res)
 {var x=req.params.id;
