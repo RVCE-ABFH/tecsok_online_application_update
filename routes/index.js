@@ -1,5 +1,14 @@
 const express = require('express');
 const app = express.Router();
+const https = require('https');
+const qs = require('querystring');
+const checksum_lib = require('../models/checksum');
+const port=5000;
+var PaytmConfig = {
+	mid: "BACSyb72631279595265",
+	key: "WU1xdWF6nvqFCFTQ",
+	website: "WEBSTAGING"
+}
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 const User = require('../models/Users');
 
@@ -67,6 +76,35 @@ app.get('/:id/View',ensureAuthenticated,function(req,res)
 
 
 });
+app.get('/:id/online_application',ensureAuthenticated,function(req,res)
+{var x=req.params.id;
+  User.findOne({username:x},function(err,user)
+  {
+    if(err)
+      console.log(err);
+    else
+      res.render("Online",{user:user});
+
+  });
+
+
+}
+);
+app.get('/:id/next_online_application',ensureAuthenticated,function(req,res)
+{var x=req.params.id;
+  User.findOne({username:x},function(err,user)
+  {
+    if(err)
+      console.log(err);
+    else
+      res.render("NextOnline",{user:user});
+
+  });
+
+
+}
+);
+
 
 app.get('/:id/profile/address',ensureAuthenticated,function(req,res)
 {var x=req.params.id;

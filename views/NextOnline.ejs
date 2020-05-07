@@ -1,0 +1,1216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0068)https://www.kpscrecruitment.in/RPS/Forms/RPS_Online_Application.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="FormsHead"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+    Home
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="ContrastStyleSheet" href="/stylesheets/Layout.css" rel="stylesheet" type="text/css">
+<link id="CultureSheet" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+<link id="Link1" href="/stylesheets/LayoutEN.css" rel="stylesheet" type="text/css">
+<link id="ContrastStyleSheet" href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/sb-admin-2.css" rel="stylesheet" type="text/css"><link href="/stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"><link href="/stylesheets/PopStyles.css" rel="stylesheet" type="text/css"><link href="/stylesheets/fileuploader.css" rel="stylesheet" type="text/css"><link href="/stylesheets/vscroller.css" rel="stylesheet" type="text/css"><link href="/stylesheets/GridviewScroll.css" rel="stylesheet" type="text/css"><link id="SiteLayoutSheet" href="/stylesheets/Layout1.css" rel="stylesheet" type="text/css"><link id="Link2" href="/stylesheets/Site1.css" rel="stylesheet" type="text/css">    <style type="text/css">
+    <style >
+        /* The Modal (background) */
+        .mySessionModal-modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .mySessionModal-modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 400px;
+        }
+
+        /* The Close Button */
+        .mySessionModalclose {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .mySessionModalclose:hover, .mySessionModalclose:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+    <script src="/javascript/CountDownSession.js" type="text/javascript"></script>
+    <script src="/javascript/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="/javascript/CommonValidations.js" type="text/javascript"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/stylesheets/ie10-viewport-bug-workaround.css" type="text/css" rel="stylesheet">
+    <script src="/javascript/ie-emulation-modes-warning.js" type="text/javascript"></script>
+    <link href="/stylesheets/ForIEOnly.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+         <script src="../../ForIEOnly/html5shiv.min.js" type="text/javascript"></script>
+      <script src="../../ForIEOnly/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        function burstCache() {
+            if (!navigator.onLine) {
+                document.body.innerHTML = 'Loading...';
+            }
+        }
+        window.history.forward();
+        function noBack() { window.history.forward(); }
+    </script>
+
+    
+    <link href="/stylesheets/Site1.css" id="Link1" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+
+        function MOLNavigatePublicFile(FileId, FileSize) {
+
+            var url = "../../PublicApp/STD/" + FileId;
+            if (FileSize != "1Bytes") {
+                if (FileId != "") {
+                    window.open(url);
+                }
+            }
+
+        }
+
+        function numeralsOnly(evt) {
+            evt = (evt) ? evt : event;
+            var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+               ((evt.which) ? evt.which : 0));
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+
+                return false;
+            }
+            if (charCode == 13) {
+                return false;
+            }
+            return true;
+        }
+
+        function runScript(changeVal) {
+            if (document.getElementById(changeVal.id).readOnly == true) {
+                return false;
+            }
+
+            return true;
+        }
+
+        function SetValues(objlnk) {
+            var lblExamCode = document.getElementById(objlnk.id.replace('LnkApply', 'lblExamCode')).innerText;
+            var lblMenuId = document.getElementById(objlnk.id.replace('LnkApply', 'lblMenuId')).innerText;
+        }
+
+
+        function ValidateCreateUser(btn) {
+            if (Validate("RegisterUserValidationGroup") == false) {
+                return false;
+            }
+            else {
+
+                return true;
+            }
+        }
+
+        function SetFocus() {
+            document.getElementById('FormsPH_LoginButton').focus();
+            return true;
+        }
+
+        function ValidateUser() {
+            if (Validate("LoginUserValidationGroup1") == false) {
+                return false;
+            }
+            else {
+                document.getElementById('HFusername').value = document.getElementById('FormsPH_UserName').value;
+
+                return true;
+            }
+        }
+
+        function onChangeTest(changeVal, ItemIndex) {
+           
+            var currentvalue = document.getElementById("FormsPH_hdnCurrentPreference").value;
+            var newValue = document.getElementById(changeVal.id).value;
+
+            if (parseInt(newValue) != parseInt((parseInt(currentvalue) + 1))) {
+                alert("Please Enter Preference No. " + parseInt((parseInt(currentvalue) + 1)));
+                document.getElementById(changeVal.id).value = "";
+                document.getElementById(changeVal.id).focus();
+                return true;
+            }
+
+            if (parseInt(newValue) == parseInt((parseInt(currentvalue) + 1))) {
+                document.getElementById("FormsPH_hdnCurrentPreference").value = newValue;
+
+                document.getElementById(changeVal.id).value = newValue;
+                document.getElementById(changeVal.id).disabled = true;
+            } else {
+                alert("Please Enter Preference No. " + parseInt((parseInt(currentvalue) + 1)));
+                document.getElementById(changeVal.id).focus();
+                document.getElementById(changeVal.id).value = "";
+                return false;
+            }
+        }
+        function onChangeTest1(changeVal, ItemIndex) {
+           
+            var currentvalue = document.getElementById("FormsPH_hdnCurrentPreference1").value;
+            var newValue = document.getElementById(changeVal.id).value;
+
+            if (parseInt(newValue) != parseInt((parseInt(currentvalue) + 1))) {
+                alert("Please Enter Preference No. " + parseInt((parseInt(currentvalue) + 1)));
+                document.getElementById(changeVal.id).value = "";
+                document.getElementById(changeVal.id).focus();
+                return true;
+            }
+
+            if (parseInt(newValue) == parseInt((parseInt(currentvalue) + 1))) {
+                document.getElementById("FormsPH_hdnCurrentPreference1").value = newValue;
+
+                document.getElementById(changeVal.id).value = newValue;
+                document.getElementById(changeVal.id).disabled = true;
+            } else {
+                alert("Please Enter Preference No. " + parseInt((parseInt(currentvalue) + 1)));
+                document.getElementById(changeVal.id).focus();
+                document.getElementById(changeVal.id).value = "";
+                return false;
+            }
+        }
+
+        function RemoveReadOnly() {
+
+            var RowCount = document.getElementById("FormsPH_hdnRowCount").value;
+            for (var i = 0; i < parseInt(RowCount) ; i++) {
+                var TextBoxName = 'FormsPH_gvDistrictPost_txtPreference_' + i;
+                var TextBoxName1 = 'FormsPH_gvDistrictPost1_txtPreference_' + i;
+                document.getElementById(TextBoxName).style.color = '#000';
+                document.getElementById(TextBoxName).value = "";
+                document.getElementById("FormsPH_hdnCurrentPreference").value = "0";
+                document.getElementById(TextBoxName).disabled = false;
+                document.getElementById(TextBoxName).readOnly = false;
+                 document.getElementById(TextBoxName1).style.color = '#000';
+                document.getElementById(TextBoxName1).value = "";               
+                document.getElementById(TextBoxName1).disabled = false;
+                document.getElementById(TextBoxName1).readOnly = false;
+                RowCount++;
+            }
+            return false;
+        }
+
+
+        window.onload = function BackFunction() {
+            try {
+                var RowCount = document.getElementById("FormsPH_hdnRowCount").value;
+                for (var i = 0; i < parseInt(RowCount) ; i++) {
+                    var TextBoxName = 'FormsPH_gvPost_txtPreference_' + i;
+                    if (parseInt(document.getElementById(TextBoxName).value) > 0) {
+                        document.getElementById(TextBoxName).disabled = true;
+
+                    }
+                }
+            } catch (e) {
+                window.setTimeout("BackFunction();", 1000);
+            }
+        };
+
+        function FDASDAPostpreference() {
+
+            var txtFDA = document.getElementById("FormsPH_txtFDA").value;
+            var txtSDA = document.getElementById("FormsPH_txtSDA").value;
+            if (txtFDA == '1' && txtSDA == '') {
+
+                $("#FormsPH_txtSDA").val('2');
+                document.getElementById('FormsPH_txtFDA').disabled = true;
+                document.getElementById('FormsPH_txtSDA').disabled = true;
+                ValidatorEnable(document.getElementById('FormsPH_ReqFDA'), false);
+                ValidatorEnable(document.getElementById('FormsPH_ReqSDA'), false);
+            }
+            else if (txtSDA == '1' && txtFDA == '') {
+
+                $("#FormsPH_txtFDA").val('2');
+                document.getElementById('FormsPH_txtFDA').disabled = true;
+                document.getElementById('FormsPH_txtSDA').disabled = true;
+                ValidatorEnable(document.getElementById('FormsPH_ReqFDA'), false);
+                ValidatorEnable(document.getElementById('FormsPH_ReqSDA'), false);
+            }
+            else if (txtFDA == '2' && txtSDA == '') {
+
+                $("#FormsPH_txtSDA").val('1');
+                document.getElementById('FormsPH_txtFDA').disabled = true;
+                document.getElementById('FormsPH_txtSDA').disabled = true;
+                ValidatorEnable(document.getElementById('FormsPH_ReqFDA'), false);
+                ValidatorEnable(document.getElementById('FormsPH_ReqSDA'), false);
+            }
+            else if (txtSDA == '2' && txtFDA == '') {
+
+                $("#FormsPH_txtFDA").val('1');
+                document.getElementById('FormsPH_txtFDA').disabled = true;
+                document.getElementById('FormsPH_txtSDA').disabled = true;
+                ValidatorEnable(document.getElementById('FormsPH_ReqFDA'), false);
+                ValidatorEnable(document.getElementById('FormsPH_ReqSDA'), false);
+            }
+            else {
+                $("#FormsPH_txtFDA").val('');
+                $("#FormsPH_txtSDA").val('');
+                document.getElementById('FormsPH_txtFDA').disabled = false;
+                document.getElementById('FormsPH_txtSDA').disabled = false;
+                ValidatorEnable(document.getElementById('FormsPH_ReqFDA'), true);
+                ValidatorEnable(document.getElementById('FormsPH_ReqSDA'), true);
+            }
+
+        }
+
+    </script>
+
+</head>
+<body onload="burstCache();  " onpageshow="if (event.persisted) noBack();">
+
+    <form method="post" action="https://www.kpscrecruitment.in/RPS/Forms/RPS_Online_Application.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="FormsForm" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value=";;AjaxControlToolkit, Version=4.1.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e:en-IN:f8fb2a65-e23a-483b-b20e-6db6ef539a22:475a4ef5:5546a2b:d2e10b12:effe2a26:37e2e5c9:1d3ed089:497ef277:a43b07eb:751cdd15:dfad98a5:3cf12cf1">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['FormsForm'];
+if (!theForm) {
+    theForm = document.FormsForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/javascript/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="/javascript/ScriptResource.axd" type="text/javascript"></script>
+<script src="/javascript/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="/javascript/ScriptResource(2).axd" type="text/javascript"></script>
+<script src="/javascript/RPS_Online_Application.aspx" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C140787B">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="v+7SlPlnCQ/J/DFuR7siDV8CdlN5TYRo2HTfY2F2UEvuuOa5eLis6Q9KP77/Xk86qMKLellEu6ZeAUpeokoW+zJVw5h03+5Gg7aHdouyfxhV4WpZI3ULnRGAIgJ6eqHrno52tuc3hKu32PRgjx5giClNJm5REza7N05Lizhr0K7MNnMAX185dD8Uvk3caI7EkTAk1PQgLBn1LZWqP5CLCd0vQmYL1Fa6Dxz9+Ykz00N7o3nSCHF0dRK7t56n3C0FFfM0xcq+Rn0msqJDnyAZsci2+N+oN2CLV/ZE37SviVb3vnL1mmUgXeUoif7FJIyUDI0usSZi+GIg4wrq+NKz3LkAz51+q4ldJhgAiyQMG3adwzMnWCYMm179txK+ASzJ629hmUdA2BF4vjKDO4u1jLIW22QeeUCnNA33IasCIaejFpVKCRJwkqfPofSn3yyb4q61e27J7bfAQ+cp8FxrVG+pKRqRCMqFA9cL8TfjCkivxZhrMNx41qCgff3Y1zmE5/nZgyMNzkTSQN4Wy/ofBs5oheG6O4O1ANg9G/tilvYjEULZVR/QqnzFlXXPMN33gwcufYjU9pQETaSWRJnPgAD9yq0zJVNfYJSAzQyYzfoBN8hW6aXtK65xQDfKfLnh/2AqxuuGBZyN+iz/u7T60/xNYWCmUHwL4fEXSRpEwK3yB87W+0F+ByTmJbSsshV+5fTJPxVxIIpe18t9tmCnJUxjC578kuFRM3gkkqWrgkrd81/861lY29YydMdXtIl7alDFf0W1LGeX4vvXmf5St5I3ZLZOQSwCUBGeUzeaTpDVcyfjoEMHGBgCPfm94xTTUC4+llWdOY6lcqMbIPQZrv2NaiJbQ93Q5sfe7EWlYXkZENu0v4Z4GQpYL2mBtNHkH0BvkTGtV6QCAW5NITkYoXba60irmsfKzxR8NJISLE0=">
+</div>
+        <div id="divnew" class="medium">
+            <div id="main">
+                <div id="header">
+                    
+<style type="text/css">
+    #clockdiv
+    {
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size:  0.75em;
+    }
+
+        #clockdiv > div
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #2e62a4;
+            display: inline-block;
+        }
+
+        #clockdiv div > span
+        {
+            padding: 5px;
+            border-radius: 3px;
+            background: #003481;
+            display: inline-block;
+        }
+
+    .smalltext
+    {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+     blink, .blink {
+         animation: blinker 1s linear infinite;
+         }
+         @keyframes blinker {  
+         50% { opacity: 0; }
+         }
+</style>
+<div class="topdiv">
+    <div class="topbuton container">
+    </div>
+</div>
+<div class="top_banner">
+    <div class="container in_banner">
+        <div class=" logo col-md-3 col-sm-3 col-xs-12">
+            <img id="" class="img-responsive" src="http://www.tecsok.com/wp-content/uploads/2018/02/tecsok-2.png" style="border-width:0px;">
+           
+        </div>
+        <div class="banner_text col-md-6 col-sm-6 col-xs-12">
+            <h2 class="text-center">
+                <span id=""><b><u>Technical Consultancy Service Organisation of Karnataka</u></b></span>
+            </h2>
+            <h4 class="text-center">
+                <span id="">Online Application Portal </span>
+            </h4>
+        </div>
+        <div class=" logo col-md-3 col-sm-3 col-xs-12">
+
+      
+            
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="">            
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" id="">HELP</a></li>  
+        <li><a href="/user/logout" id="">LOGOUT</a></li> 
+        
+
+         </ul>
+
+    </div>
+</div>
+</nav>
+                <div class="container-fluid" id="main-content">
+                    <div id="dvLeftMenu">
+                        <div>
+                            <div class="navbar-default sidebar" role="navigation">
+                                <div class="sidebar-nav navbar-collapse" aria-expanded="false" style="min-height: 570px; background-color: #bd135b;">
+                                    <ul class="nav in" id="side-menu">
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard"><i class="fa fa-home fa-fw"></i><span id="liHome">Home</span> </a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/profile"><i class="fa fa-user fa-fw"></i><span id="liProfileCreation">Profile Creation</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/View"><i class="fa fa-angle-double-right fa-fw" style="background-color: white ; color: #bd135b;"></i><span id="liView" >View &amp; Print Profile</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/online_application"><i class="fa fa-file fa-fw"></i><span id="lionlineApp">Online Application</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="/<%=user.username%>/application"><i class="fa fa-street-view fa-fw"></i><span id="liMyApplication">My Application</span></a>
+                                        </li>
+                                        <li><a href="/<%=user.username%>/request"><i class="fa fa-user fa-fw"></i><span id="liMyRequest">My Request</span></a></li>
+                                        <li>
+                                            <a href="/<%=user.username%>/dashboard""><i class="fa fa-info-circle fa-fw"></i><span id="liHelp">Help</span></a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page-wrapper">
+                        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'FormsForm', ['tctl00$FormsPH$UP1','FormsPH_UP1','tctl00$FormsPH$UPpnl','FormsPH_UPpnl','tctl00$FormsPH$updet','FormsPH_updet','tctl00$FormsPH$UpdatePanel2','FormsPH_UpdatePanel2','tctl00$UpdRandomToken','UpdRandomToken'], [], ['ctl00$FormsPH$btnPayNow','FormsPH_btnPayNow'], 90, 'ctl00');
+//]]>
+</script>
+
+                        
+    <div id="FormsPH_VLEbox" style="display:none;">
+        <div id="FormsPH_UP1">
+	
+                <table align="center" class="userpro">
+                    <tbody><tr>
+                        <td>
+                            <table id="FormsPH_rdUser" style="width:500px;">
+		<tbody><tr>
+			<td><input id="FormsPH_rdUser_0" type="radio" name="ctl00$FormsPH$rdUser" value="N" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$FormsPH$rdUser$0\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="FormsPH_rdUser_0">New User</label></td><td><input id="FormsPH_rdUser_1" type="radio" name="ctl00$FormsPH$rdUser" value="E" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$FormsPH$rdUser$1\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="FormsPH_rdUser_1">Existing User</label></td><td><input id="FormsPH_rdUser_2" type="radio" name="ctl00$FormsPH$rdUser" value="U" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$FormsPH$rdUser$2\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="FormsPH_rdUser_2">Update User Profile</label></td><td><input id="FormsPH_rdUser_3" type="radio" name="ctl00$FormsPH$rdUser" value="P" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$FormsPH$rdUser$3\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="FormsPH_rdUser_3">Make Payment</label></td>
+		</tr>
+	</tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+            
+</div>
+        <input type="submit" name="ctl00$FormsPH$btnJunk" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$FormsPH$btnJunk&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="FormsPH_btnJunk" style="display: none;">
+        
+        <div id="FormsPH_pnlVLE" class="pnlBackGround" style="display: none; min-width: 300px; max-height: 700px; max-width: 90%; overflow: auto; position: fixed; z-index: 100001;">
+	
+            <div id="FormsPH_UPpnl">
+		
+                    <table>
+                        <tbody><tr>
+                            <td>
+                                <a id="FormsPH_lnkClose" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$FormsPH$lnkClose&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Close</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="FormsPH_dvNewUser" width="100%">
+                                </div>
+                                <div id="FormsPH_dvExisting" width="100%">
+                                    <div id="FormsPH_pnLogib" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;FormsPH_LoginButton&#39;)">
+			
+                                        <fieldset class="login" style="width: 300px">
+                                            <legend></legend>
+                                            <label for="FormsPH_UserName" id="FormsPH_UserNameLabel">Username:</label>
+                                            <input name="ctl00$FormsPH$UserName" type="text" id="FormsPH_UserName" class="textEntry" autocomplete="off">
+                                            <span id="FormsPH_UserNameRequired" title="User Name is required." class="notification" style="visibility:hidden;">*</span>
+                                            <label for="FormsPH_Password" id="FormsPH_PasswordLabel">Password:</label>
+                                            <input name="ctl00$FormsPH$Password" type="password" id="FormsPH_Password" class="textEntry" autocomplete="off">
+                                            <span id="FormsPH_PasswordRequired" title="Password is required." class="notification" style="visibility:hidden;">*</span>
+                                        </fieldset>
+                                        <input type="submit" name="ctl00$FormsPH$LoginButton" value="Submit" onclick="return ValidateUser();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$FormsPH$LoginButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="FormsPH_LoginButton">
+                                    
+		</div>
+                                </div>
+                                <div id="FormsPH_dvPayment" width="100%">
+                                    <fieldset class="login" style="width: 700px;">
+                                        <legend>
+                                            <span id="FormsPH_Label1">User Application Details</span></legend>
+                                        <label for="FormsPH_txtApplicationId" id="FormsPH_Label2">Application Id:</label>
+                                        <input name="ctl00$FormsPH$txtApplicationId" type="text" id="FormsPH_txtApplicationId" class="textEntry" autocomplete="off" style="width:300px;">
+                                        <span id="FormsPH_RfvtxtApplicationId" title="Transaction Id is required." class="notification" style="visibility:hidden;">*</span>
+                                        <label for="FormsPH_UserName" id="FormsPH_lbl_Year">Year:</label>
+                                        <select name="ctl00$FormsPH$ddl_Year" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$FormsPH$ddl_Year\&#39;,\&#39;\&#39;)&#39;, 0)" id="FormsPH_ddl_Year">
+
+		</select>
+                                        <span id="FormsPH_rfvddlYear" title="Year is required." class="notification" style="visibility:hidden;">*</span>
+                                        <br>
+                                        <br>
+                                        <label for="FormsPH_UserName" id="FormsPH_lbl_Rec_Type">Recruitment Type:</label>
+                                        <select name="ctl00$FormsPH$ddl_Rec_Type" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$FormsPH$ddl_Rec_Type\&#39;,\&#39;\&#39;)&#39;, 0)" id="FormsPH_ddl_Rec_Type">
+
+		</select>
+                                        <span id="FormsPH_rfvddl_Rec_Type" title="Recruitment Type is required." class="notification" style="visibility:hidden;">*</span>
+                                        <br>
+                                        <br>
+                                        <label for="FormsPH_UserName" id="FormsPH_Label3">Exam Name:</label>
+                                        <select name="ctl00$FormsPH$ddlServiceName" id="FormsPH_ddlServiceName" style="width:590px;">
+
+		</select>
+                                        <span id="FormsPH_rfvddlServiceName" title="Exam Name is required." class="notification" style="visibility:hidden;">*</span>
+                                    </fieldset>
+                                    <input type="submit" name="ctl00$FormsPH$btnPayNow" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$FormsPH$btnPayNow&quot;, &quot;&quot;, true, &quot;PaymentValidationGroup&quot;, &quot;&quot;, false, false))" id="FormsPH_btnPayNow">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                
+	</div>
+        
+</div>
+    <div id="FormsPH_mdVLE_backgroundElement" class="modalBackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></div>
+
+    <table cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                    <td style="height: 40px">&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-height: 400px;">
+
+                        <fieldset class="myHdHolder">
+                            <legend class="my_HDTxt">
+                                <span id="FormsPH_lblHeading2" class="MPUKMSSBLabel">Department Post Selection</span>
+                            </legend>
+                            <table class="SectionTable" style="width: 20.5cm;">
+                                <tbody><tr style="height: 5px;">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr id="cnt2ToHide">
+                                    <td colspan="2" align="left">
+                                        <span id="FormsPH_lblInstr" style="color: Red; font-size: 16px; font-weight: bold; text-decoration: underline">Instructions</span>
+                                        :<br>
+                                        <span id="FormsPH_lblInst1" style="color: Red">1] Once your Preferences get saved, you can not change them.</span><br>
+                                        <span id="FormsPH_lblInst3" style="color: Red">2] Type numeric characters 1 onwards in 'Department Preference No.' column as per your Department preference. </span>
+                                        <br>
+
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <div id="FormsPH_pnlExamPreference">
+		
+                                            <div>
+			<table cellspacing="0" rules="all" border="1" id="FormsPH_gvPost" style="border-collapse:collapse;width: 100%">
+				<tbody><tr>
+					<th align="center" scope="col" style="color:White;background-color:#2C4559;height:35px;">Sr.No</th><th scope="col" style="color:White;background-color:#2C4559;">Name Of Department</th><th align="center" scope="col" style="color:White;background-color:#2C4559;">Department Preference No.</th>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_0" title="Sr.No" style="font-size: 12px;">1</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_0" style="display: none">SDARPC/2020/01</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_0" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_0" style="font-size: 13px; padding-left: 5px;">Registar, Karnataka State Administrative Tribunal, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl02$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_0" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,0);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_1" title="Sr.No" style="font-size: 12px;">2</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_1" style="display: none">SDARPC/2020/02</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_1" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_1" style="font-size: 13px; padding-left: 5px;">Additional Director General and Director general of Prison,  Prison Department, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl03$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_1" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,1);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_2" title="Sr.No" style="font-size: 12px;">3</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_2" style="display: none">SDARPC/2020/03</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_2" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_2" style="font-size: 13px; padding-left: 5px;">Commissioner, Transport Department,  Bangalore </span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl04$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_2" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,2);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_3" title="Sr.No" style="font-size: 12px;">4</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_3" style="display: none">SDARPC/2020/04</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_3" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_3" style="font-size: 13px; padding-left: 5px;">Deputy Commissioner , office of the Deputy Commissioner, Belagavi </span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl05$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_3" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,3);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_4" title="Sr.No" style="font-size: 12px;">5</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_4" style="display: none">SDARPC/2020/05</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_4" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_4" style="font-size: 13px; padding-left: 5px;">Director, Health And Family Welfare Department, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl06$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_4" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,4);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_5" title="Sr.No" style="font-size: 12px;">6</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_5" style="display: none">SDARPC/2020/06</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_5" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_5" style="font-size: 13px; padding-left: 5px;">Director,  Karnataka State Archives Department Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl07$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_5" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,5);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_6" title="Sr.No" style="font-size: 12px;">7</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_6" style="display: none">SDARPC/2020/07</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_6" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_6" style="font-size: 13px; padding-left: 5px;">Director, Horticulture Department , Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl08$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_6" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,6);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_7" title="Sr.No" style="font-size: 12px;">8</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_7" style="display: none">SDARPC/2020/08</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_7" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_7" style="font-size: 13px; padding-left: 5px;">Commissioner, Bruhat Bengaluru Mahanagara Palike, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl09$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_7" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,7);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_8" title="Sr.No" style="font-size: 12px;">9</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_8" style="display: none">SDARPC/2020/09</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_8" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_8" style="font-size: 13px; padding-left: 5px;">Commissioner, Collegiate Education Department, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl10$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_8" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,8);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_9" title="Sr.No" style="font-size: 12px;">10</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_9" style="display: none">SDARPC/2020/10</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_9" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_9" style="font-size: 13px; padding-left: 5px;">Govt Secretary,  Karnataka  Government Secretariat, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl11$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_9" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,9);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_10" title="Sr.No" style="font-size: 12px;">11</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_10" style="display: none">SDARPC/2020/11</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_10" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_10" style="font-size: 13px; padding-left: 5px;">Chief Director,  Administrative Training Institute, Mysuru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl12$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_10" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,10);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_11" title="Sr.No" style="font-size: 12px;">12</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_11" style="display: none">SDARPC/2020/12</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_11" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_11" style="font-size: 13px; padding-left: 5px;">Registar, Karnataka Lokayuktha, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl13$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_11" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,11);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_12" title="Sr.No" style="font-size: 12px;">13</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_12" style="display: none">SDARPC/2020/13</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_12" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_12" style="font-size: 13px; padding-left: 5px;">Director, Department of Treasury, Bangalore Division.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl14$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_12" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,12);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_13" title="Sr.No" style="font-size: 12px;">14</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_13" style="display: none">SDARPC/2020/14</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_13" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_13" style="font-size: 13px; padding-left: 5px;">Director, Department of Treasury, Mysore Division.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl15$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_13" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,13);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_14" title="Sr.No" style="font-size: 12px;">15</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_14" style="display: none">SDARPC/2020/15</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_14" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_14" style="font-size: 13px; padding-left: 5px;">Director, Department of Treasury, Belagavi Division.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl16$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_14" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,14);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_15" title="Sr.No" style="font-size: 12px;">16</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_15" style="display: none">SDARPC/2020/16</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_15" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_15" style="font-size: 13px; padding-left: 5px;">Director, Department of Treasury, kalaburgi Division.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl17$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_15" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,15);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_16" title="Sr.No" style="font-size: 12px;">17</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_16" style="display: none">SDARPC/2020/17</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_16" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_16" style="font-size: 13px; padding-left: 5px;">Deputy Commissioner , office of the Deputy Commissioner, Chikkamagaluru </span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl18$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_16" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,16);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_17" title="Sr.No" style="font-size: 12px;">18</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_17" style="display: none">SDARPC/2020/18</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_17" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_17" style="font-size: 13px; padding-left: 5px;">Director,  Women and Child Development  Department, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl19$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_17" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,17);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_18" title="Sr.No" style="font-size: 12px;">19</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_18" style="display: none">SDARPC/2020/19</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_18" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_18" style="font-size: 13px; padding-left: 5px;">Director, Co-Operative Audit  Department,  Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl20$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_18" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,18);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_19" title="Sr.No" style="font-size: 12px;">20</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_19" style="display: none">SDARPC/2020/20</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_19" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_19" style="font-size: 13px; padding-left: 5px;">Secretary, Karnataka Public Service Commission, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl21$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_19" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,19);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_20" title="Sr.No" style="font-size: 12px;">21</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_20" style="display: none">SDARPC/2020/21</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_20" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_20" style="font-size: 13px; padding-left: 5px;">Director, Factories, Boilers, Industrial Safety &amp; Health Department, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl22$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_20" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,20);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_21" title="Sr.No" style="font-size: 12px;">22</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_21" style="display: none">SDARPC/2020/22</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_21" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_21" style="font-size: 13px; padding-left: 5px;">Director, Mines And Geology Department, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl23$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_21" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,21);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_22" title="Sr.No" style="font-size: 12px;">23</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_22" style="display: none">SDARPC/2020/23</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_22" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_22" style="font-size: 13px; padding-left: 5px;">Commissioner, Directorate of Cane Development and Director of Sugar, Bangaluru</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl24$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_22" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,22);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_23" title="Sr.No" style="font-size: 12px;">24</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_23" style="display: none">SDARPC/2020/24</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_23" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_23" style="font-size: 13px; padding-left: 5px;">Controller, Legal Metrology Department, Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl25$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_23" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,23);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_24" title="Sr.No" style="font-size: 12px;">25</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_24" style="display: none">SDARPC/2020/25</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_24" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_24" style="font-size: 13px; padding-left: 5px;">Commissioner, Agriculture Department , Bengaluru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl26$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_24" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,24);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_25" title="Sr.No" style="font-size: 12px;">26</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_25" style="display: none">SDARPC/2020/26</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_25" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_25" style="font-size: 13px; padding-left: 5px;">Deputy Director, Public Instruction Department, Kalburgi.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl27$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_25" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,25);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_26" title="Sr.No" style="font-size: 12px;">27</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_26" style="display: none">SDARPC/2020/27</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_26" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_26" style="font-size: 13px; padding-left: 5px;">Deputy Director, Public Instruction Department,Bidar.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl28$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_26" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,26);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_27" title="Sr.No" style="font-size: 12px;">28</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_27" style="display: none">SDARPC/2020/28</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_27" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_27" style="font-size: 13px; padding-left: 5px;">Deputy Director, Public Instruction Department, Koppala.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl29$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_27" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,27);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_28" title="Sr.No" style="font-size: 12px;">29</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_28" style="display: none">SDARPC/2020/29</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_28" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_28" style="font-size: 13px; padding-left: 5px;">Deputy Director, Public Instruction Department, Raichuru.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl30$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_28" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,28);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_29" title="Sr.No" style="font-size: 12px;">30</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_29" style="display: none">SDARPC/2020/30</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_29" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_29" style="font-size: 13px; padding-left: 5px;">Deputy Director, Public Instruction Department, Ballari.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl31$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_29" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,29);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr><tr>
+					<td style="background-color:#F6F5F3;width:40px;">
+                                                            <span id="FormsPH_gvPost_lblNo_30" title="Sr.No" style="font-size: 12px;">31</span>
+                                                            <span id="FormsPH_gvPost_lblPostId_30" style="display: none">SDARPC/2020/31</span>
+                                                            <span id="FormsPH_gvPost_lblAdvertisementId_30" style="display: none">E(3)800/19-20/PSC/RPC</span>
+
+                                                        </td><td style="background-color:#F6F5F3;height:30px;width:440px;">
+                                                            <span id="FormsPH_gvPost_lblPostName_30" style="font-size: 13px; padding-left: 5px;">Deputy Director, Public Instruction Department, Yadagiri.</span>
+                                                        </td><td style="background-color:#F6F5F3;width:140px;">
+                                                            <center>
+                                                                <input name="ctl00$FormsPH$gvPost$ctl32$txtPreference" type="text" maxlength="2" id="FormsPH_gvPost_txtPreference_30" autocomplete="off" onkeypress="return ValidateCharacter('+1234567890',event);" oncopy="return false;" onpaste="return false;" onchange="return onChangeTest(this,30);" style="height: 20px; width: 40px;">
+                                                            </center>
+                                                        </td>
+				</tr>
+			</tbody></table>
+		</div>
+                                        
+	</div>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mdl">
+                                            <b>
+                                                <span style="color:Red;font-weight:bold;"><input id="Trueinstruction" type="checkbox" name="ctl00$FormsPH$Trueinstruction"><label for="Trueinstruction">Declaration : AS PER GOVERNEMNT ORDER DATED: 05-09-2015, KCS (Recruitment to the Mnisterial Post) Rule, 1978 Subrule (2) (Second Amendment) Rules 2015 if candidate not give the all departmental preferences, it should popup as   “The candidates who apply for the competitive examinations shall clearly indicate in their application forms the services or posts for which they wish to be considered for appointment in the order of preference.  If the candidate does not prefer any service or post he may be considered for remaining unpreferred vacant post or service”.</label></span></b>
+                                            <br>
+                                            
+                                            <span id="FormsPH_CustomValidator1" style="color:Black;visibility:hidden;">Please Tick Declaration</span>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;">
+                                        <input type="submit" name="ctl00$FormsPH$btnBack" value="Back" id="FormsPH_btnBack" class="positive">
+                                    </td>
+                                    <td style="width: 30%;">
+                                        <input type="submit" name="ctl00$FormsPH$btnApply" value="Submit" onclick="return SavePreferences();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$FormsPH$btnApply&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="FormsPH_btnApply" class="positive">
+
+
+                                    </td>
+
+
+
+                                </tr>
+
+                            </tbody></table>
+                            &nbsp;
+                        </fieldset>
+                    </td>
+
+                </tr>
+            
+        
+    <!-- Content here -->
+
+
+
+    <div id="FormsPH_UpdatePanel2">
+	
+            <span id="FormsPH_lblSRVID" style="display: none;"></span>
+            <span id="FormsPH_lblTRNID" style="display: none;"></span>
+            <span id="FormsPH_lblRetUrl" style="display: none;">~/Default.aspx</span>
+            <input type="hidden" name="ctl00$FormsPH$HDAdvtNo" id="FormsPH_HDAdvtNo">
+            <input type="hidden" name="ctl00$FormsPH$TransId" id="FormsPH_TransId" value="1900690000458805">
+            <input type="hidden" name="ctl00$FormsPH$UpdateFlag" id="FormsPH_UpdateFlag" value="U">
+            <input type="hidden" name="ctl00$FormsPH$hdnRowCount" id="FormsPH_hdnRowCount">
+            <input type="hidden" name="ctl00$FormsPH$HDSelectionType" id="FormsPH_HDSelectionType">
+            <input type="hidden" name="ctl00$FormsPH$hdnCurrentPreference" id="FormsPH_hdnCurrentPreference" value="0">
+            <input type="hidden" name="ctl00$FormsPH$hdnMaxPreference" id="FormsPH_hdnMaxPreference">
+            <input type="hidden" name="username" id="HFusername">
+            <input type="hidden" name="ctl00$FormsPH$hdnCurrentPreference1" id="FormsPH_hdnCurrentPreference1" value="0">
+        
+</div>
+
+
+                    </div>
+                </div>
+                <div id="bottom">
+                    
+
+                    <div class="rounded_footer">
+                        <div class="left_footer">
+                        </div>
+                        <div class="right_footer">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="cleaner">
+                    </div>
+                    <div id="footer">
+                    <div class="container-fluid">
+                        <p>
+                            <span id="ctl00_lblDisclaimer"></span><span id="ctl00_lblVersion"> </span></p>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        <div id="UpdRandomToken">
+	
+                <div style="display: none">
+                    <input type="hidden" name="ctl00$HdnRandomToken" id="HdnRandomToken">
+                </div>
+            
+</div>
+        <script src="/javascript/common.js" type="text/javascript"></script>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("FormsPH_UserNameRequired"), document.getElementById("FormsPH_PasswordRequired"), document.getElementById("FormsPH_RfvtxtApplicationId"), document.getElementById("FormsPH_rfvddlYear"), document.getElementById("FormsPH_rfvddl_Rec_Type"), document.getElementById("FormsPH_rfvddlServiceName"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var FormsPH_UserNameRequired = document.all ? document.all["FormsPH_UserNameRequired"] : document.getElementById("FormsPH_UserNameRequired");
+FormsPH_UserNameRequired.controltovalidate = "FormsPH_UserName";
+FormsPH_UserNameRequired.errormessage = "User Name is required.";
+FormsPH_UserNameRequired.validationGroup = "LoginUserValidationGroup1";
+FormsPH_UserNameRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+FormsPH_UserNameRequired.initialvalue = "";
+var FormsPH_PasswordRequired = document.all ? document.all["FormsPH_PasswordRequired"] : document.getElementById("FormsPH_PasswordRequired");
+FormsPH_PasswordRequired.controltovalidate = "FormsPH_Password";
+FormsPH_PasswordRequired.errormessage = "Password is required.";
+FormsPH_PasswordRequired.validationGroup = "LoginUserValidationGroup1";
+FormsPH_PasswordRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+FormsPH_PasswordRequired.initialvalue = "";
+var FormsPH_RfvtxtApplicationId = document.all ? document.all["FormsPH_RfvtxtApplicationId"] : document.getElementById("FormsPH_RfvtxtApplicationId");
+FormsPH_RfvtxtApplicationId.controltovalidate = "FormsPH_txtApplicationId";
+FormsPH_RfvtxtApplicationId.errormessage = "Transaction Id is required.";
+FormsPH_RfvtxtApplicationId.validationGroup = "PaymentValidationGroup";
+FormsPH_RfvtxtApplicationId.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+FormsPH_RfvtxtApplicationId.initialvalue = "";
+var FormsPH_rfvddlYear = document.all ? document.all["FormsPH_rfvddlYear"] : document.getElementById("FormsPH_rfvddlYear");
+FormsPH_rfvddlYear.controltovalidate = "FormsPH_ddl_Year";
+FormsPH_rfvddlYear.errormessage = "Year is required.";
+FormsPH_rfvddlYear.validationGroup = "PaymentValidationGroup";
+FormsPH_rfvddlYear.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+FormsPH_rfvddlYear.initialvalue = "0";
+var FormsPH_rfvddl_Rec_Type = document.all ? document.all["FormsPH_rfvddl_Rec_Type"] : document.getElementById("FormsPH_rfvddl_Rec_Type");
+FormsPH_rfvddl_Rec_Type.controltovalidate = "FormsPH_ddl_Rec_Type";
+FormsPH_rfvddl_Rec_Type.errormessage = "Recruitment Type is required.";
+FormsPH_rfvddl_Rec_Type.validationGroup = "PaymentValidationGroup";
+FormsPH_rfvddl_Rec_Type.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+FormsPH_rfvddl_Rec_Type.initialvalue = "0";
+var FormsPH_rfvddlServiceName = document.all ? document.all["FormsPH_rfvddlServiceName"] : document.getElementById("FormsPH_rfvddlServiceName");
+FormsPH_rfvddlServiceName.controltovalidate = "FormsPH_ddlServiceName";
+FormsPH_rfvddlServiceName.errormessage = "Exam Name is required.";
+FormsPH_rfvddlServiceName.validationGroup = "PaymentValidationGroup";
+FormsPH_rfvddlServiceName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+FormsPH_rfvddlServiceName.initialvalue = "0";
+//]]>
+</script>
+
+<script type="text/javascript" src="/javascript/MaskedEditFix.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+onload();(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"FormsPH_pnlVLE","dynamicServicePath":"/RPS/Forms/RPS_Online_Application.aspx","id":"FormsPH_mdVLE"}, null, null, $get("FormsPH_btnJunk"));
+});
+
+document.getElementById('FormsPH_UserNameRequired').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('FormsPH_UserNameRequired'));
+}
+
+document.getElementById('FormsPH_PasswordRequired').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('FormsPH_PasswordRequired'));
+}
+
+document.getElementById('FormsPH_RfvtxtApplicationId').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('FormsPH_RfvtxtApplicationId'));
+}
+
+document.getElementById('FormsPH_rfvddlYear').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('FormsPH_rfvddlYear'));
+}
+
+document.getElementById('FormsPH_rfvddl_Rec_Type').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('FormsPH_rfvddl_Rec_Type'));
+}
+
+document.getElementById('FormsPH_rfvddlServiceName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('FormsPH_rfvddlServiceName'));
+}
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"FormsPH_updet","displayAfter":500,"dynamicLayout":true}, null, null, $get("FormsPH_UpdateProgress2"));
+});
+//]]>
+</script>
+</form>
+
+
+    <form id="pmt" method="post" action="https://www.kpscrecruitment.in/RPS/Forms/MakePayment.aspx">
+        <input type="hidden" id="TRNID" name="NTRNID" value="">
+        <input type="hidden" id="SRVID" name="NSRVID" value="">
+        <input type="hidden" id="AMT" name="NAMT" value="">
+        <input type="hidden" id="Email" name="NEmail" value="">
+        <input type="hidden" id="Mobile" name="NMobile" value="">
+        <input type="hidden" id="RetUrl" name="NRetUrl" value="">
+        <input type="hidden" id="ServiceName" name="NServiceName" value="">
+        <input type="hidden" id="ADVNo" name="NADVNo" value="">
+        <input type="submit" id="SPMT" name="NPMT" value="MKPMT" style="visibility: hidden;">
+        <input type="hidden" id="CreatedBy" name="NCreatedBy" value="">
+        <input type="hidden" id="Name" name="NName" value="">
+    </form>
+    <script type="text/javascript">
+
+        var span = document.getElementsByClassName("mySessionModalclose")[0].onclick = function () {
+            document.getElementById('mySessionModal').style.display = "none";
+        }
+
+        var sessionTimeout = "20";
+        var MINUTES = parseInt(sessionTimeout);
+        var SECONDS = 60;
+        var MILLISECONDS = 1000;
+        var timeInMinutes = 10;
+        var currentTime = Date.parse(new Date());
+        var deadline = new Date(currentTime + MINUTES * SECONDS * MILLISECONDS);
+        initializeClock('clockdiv', deadline);
+
+    </script>
+
+
+</body></html>
